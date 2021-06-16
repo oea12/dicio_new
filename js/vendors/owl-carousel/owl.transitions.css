@@ -1,0 +1,35 @@
+.newlogito {
+    position: relative;
+    top: -15px;
+}
+
+@media (min-width:1200px) {
+}
+
+@media (min-width:900px) and (max-width:990px) {
+    .img_den3 {
+    }
+}
+
+@media (max-width:1199px) {
+    .imgden {
+        width: 54px;
+    }
+}
+
+.new_tittle_notice {
+    text-transform: uppercase;
+}
+
+.ipadnew {
+    width: 50%;
+}
+
+.newipadsize {
+    width: 50%;
+    position: relative;
+}
+
+.newipadsize {
+    position: relative;
+}

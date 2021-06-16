@@ -1,0 +1,35 @@
+/******************************************************************************
+  Skills
+*******************************************************************************/
+.skill-wrap {
+  background: #f2f2f2;
+  background: rgba(#000,.05);
+  @include border-r(500px);
+  display: inline-block;
+  padding: 2px;
+  position: relative;
+  text-align: center;
+  
+  .skill-percent {
+    font-size: 3.125em;
+    font-family: $miso;
+    left: 10px;
+    line-height: 1;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+  }
+  .skill-name {
+    color: #768088;
+    font-size: .8125em;
+    font-weight: 500;
+    left: 10px;
+    line-height: 1;
+    position: absolute;
+    right: 10px;
+    top: 95px;
+  }
+  canvas {
+    vertical-align: top;
+  }
+}

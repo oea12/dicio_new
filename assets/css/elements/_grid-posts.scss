@@ -1,0 +1,34 @@
+/******************************************************************************
+  Posts
+*******************************************************************************/
+.grid-post {
+  background: rgba(0,0,0,0.05);
+  @include border-r(3px);
+  margin: 0 auto 30px;
+  max-width: 370px;
+  padding: 10px 10px 30px;
+  text-align: center;
+  visibility: visible !important;
+  
+  .image {
+    margin-bottom: 21px;
+  }
+  .title {
+    font-size: 1.75em;
+    margin-bottom: 1px;
+  }
+  .meta {
+    color: #aaa;
+    font-size: .75em;
+    margin: 0 0 11px;
+  }
+  .description {
+    color: #777;
+    font-size: .875em;
+    line-height: 1.75;
+    margin: 0 0 18px;
+  }
+  &.bg-white {
+    background: #fff;
+  }
+}

@@ -1,0 +1,120 @@
+/******************************************************************************
+  Success
+*******************************************************************************/
+.success-carousel {
+  .stories {
+    background: rgba(0,0,0,0.05);
+    @include border-r(3px);
+    margin-top: 75px;
+    padding: 41px 70px;
+    position: relative;
+    @media (max-width: $media-xs) {
+      padding: 21px 40px;
+    }
+    
+    .avatars {
+      height: 130px;
+      left: 50%;
+      margin: -65px 0 0 -65px;
+      overflow: hidden;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: 130px;
+      
+      .avatar {
+        background: rgba(0,0,0,.05);
+        @include border-r(75px);
+        height: 130px;
+        margin: 0;
+        padding: 5px;
+        width: 130px;
+        
+        img {
+          @include border-r(60px);
+        }
+      }
+    }
+    .content {
+      width: 10000px;
+      
+      .story {
+        float: left;
+        padding-top: 46px;
+        text-align: center;
+        
+        blockquote {
+          border: 0 none;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+    .navigation {
+      line-height: 1;
+      overflow: hidden;
+      vertical-align: top;
+      
+      .prev,
+      .next {
+        left: 30px;
+        
+        @media (max-width: $media-xs) {
+          left: 15px;
+        }
+      }
+      .next {
+        left: auto;
+        right: 30px;
+        
+        @media (max-width: $media-xs) {
+          right: 15px;
+        }
+      }
+      .pager {
+        margin: 41px 0 0;
+      }
+    }
+  }
+  .logos {
+    margin-top: 36px;
+    text-align: center;
+    
+    .logo {
+      border: 0;
+      display: inline-block;
+      margin-top: 20px;
+      opacity: .25;
+      @include transition(opacity);
+      vertical-align: top;
+      
+      &:hover {
+        opacity: 1;
+      }
+      &.selected {
+        opacity: .75;
+      }
+    }
+  }
+  
+  // Inverse
+  &.inverse {
+    .stories {
+      background: #fff;
+      background: rgba(#fff,.98);
+      color: #1e2d3a;
+      
+      .avatars {
+        .avatar {
+          background: rgba(#fff,.75);
+        }
+    }
+      blockquote {
+        footer,
+        .footer {
+          color: #1e2d3a;
+        }
+      }
+    }
+  }
+}

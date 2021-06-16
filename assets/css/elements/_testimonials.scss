@@ -1,0 +1,38 @@
+/******************************************************************************
+  Testimonials
+*******************************************************************************/
+.testimonials {
+  background: rgba(0,0,0,0.05);
+  @include border-r(3px);
+  padding: 46px 40px 41px;
+  
+  @media (max-width: $media-xs) {
+    padding: 26px 20px 21px;
+  }
+  
+  .testimonial {
+    text-align: center;
+    
+    .icon {
+      color: $danger;
+      font-size: 3.5em;
+      line-height: 1;
+      margin-bottom: 27px;
+      vertical-align: top;
+      
+      .fa {
+        vertical-align: top;
+      }
+    }
+    
+    blockquote {
+      border: 0 none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .owl-pagination {
+    margin-top: 41px;
+    padding: 0;
+  }
+}

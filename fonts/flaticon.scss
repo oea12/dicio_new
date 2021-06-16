@@ -1,0 +1,89 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?756f84bab7adafa38608e7ea4dde74f3") format("truetype"),
+url("./flaticon.woff?756f84bab7adafa38608e7ea4dde74f3") format("woff"),
+url("./flaticon.woff2?756f84bab7adafa38608e7ea4dde74f3") format("woff2"),
+url("./flaticon.eot?756f84bab7adafa38608e7ea4dde74f3#iefix") format("embedded-opentype"),
+url("./flaticon.svg?756f84bab7adafa38608e7ea4dde74f3#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "sello": "\f101",
+    "blockchain": "\f102",
+    "reproductor-de-video": "\f103",
+    "reconocimiento-facial": "\f104",
+    "reconocimiento-facial-1": "\f105",
+    "contrato": "\f106",
+    "usuario": "\f107",
+    "phone": "\f108",
+    "save-money": "\f109",
+    "embassy": "\f10a",
+    "hospital": "\f10b",
+    "life-insurance": "\f10c",
+    "store": "\f10d",
+    "delivery": "\f10e",
+    "online-shopping": "\f10f",
+    "earth-grid": "\f110",
+);
+
+.flaticon-sello:before {
+    content: map-get($flaticon-map, "sello");
+}
+.flaticon-blockchain:before {
+    content: map-get($flaticon-map, "blockchain");
+}
+.flaticon-reproductor-de-video:before {
+    content: map-get($flaticon-map, "reproductor-de-video");
+}
+.flaticon-reconocimiento-facial:before {
+    content: map-get($flaticon-map, "reconocimiento-facial");
+}
+.flaticon-reconocimiento-facial-1:before {
+    content: map-get($flaticon-map, "reconocimiento-facial-1");
+}
+.flaticon-contrato:before {
+    content: map-get($flaticon-map, "contrato");
+}
+.flaticon-usuario:before {
+    content: map-get($flaticon-map, "usuario");
+}
+.flaticon-phone:before {
+    content: map-get($flaticon-map, "phone");
+}
+.flaticon-save-money:before {
+    content: map-get($flaticon-map, "save-money");
+}
+.flaticon-embassy:before {
+    content: map-get($flaticon-map, "embassy");
+}
+.flaticon-hospital:before {
+    content: map-get($flaticon-map, "hospital");
+}
+.flaticon-life-insurance:before {
+    content: map-get($flaticon-map, "life-insurance");
+}
+.flaticon-store:before {
+    content: map-get($flaticon-map, "store");
+}
+.flaticon-delivery:before {
+    content: map-get($flaticon-map, "delivery");
+}
+.flaticon-online-shopping:before {
+    content: map-get($flaticon-map, "online-shopping");
+}
+.flaticon-earth-grid:before {
+    content: map-get($flaticon-map, "earth-grid");
+}

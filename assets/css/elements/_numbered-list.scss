@@ -1,0 +1,227 @@
+/******************************************************************************
+  Numbered List
+*******************************************************************************/
+.numbered-list {
+  margin: 0 0 0 -30px;
+  @media (max-width: $media-xs) {
+    margin: 0;
+  }
+  
+  .one-page & {
+    height: 0;
+    padding-bottom: 80px;
+    @media (max-width: $media-xs) {
+      height: auto;
+      padding-bottom: 0;
+    }
+    
+    &.owl-carousel {
+      height: auto;
+    }
+  }
+  .item {
+    padding: 15px 0 15px 30px;
+    position: relative;
+    
+    &:first-child {
+      .item-link {
+        &:after {
+          display: none !important;
+        }
+      }
+    }
+    .item-link {
+      border: 0 none !important;
+      color: #fff;
+      display: block;
+      height: 51px;
+      position: relative;
+      width: 51px;
+      
+      &:after {
+        border-left: 1px solid rgba(#000, .2);
+        bottom: 100%;
+        content: "";
+        display: block;
+        height: 30px;
+        left: 25px;
+        margin: 0;
+        position: absolute;
+        width: 0px;
+      }
+      &:before {
+        background: rgba(#000,.5);
+        @include border-r(50%);
+        bottom: 0;
+        content: "";
+        display: block;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition:
+          background 0.2s ease-in-out,
+          bottom 0.2s ease-in-out,
+          left 0.2s ease-in-out,
+          right 0.2s ease-in-out,
+          top 0.2s ease-in-out;
+      }
+      .fa {
+        color: #000;
+        color: rgba(#000,.5);
+        left: 0;
+        margin: 18px 0 0 -30px;
+        position: absolute;
+      }
+      .number {
+        height: 51px;
+        font-size: .875em;
+        font-weight: bold;
+        line-height: 51px;
+        position: relative;
+        text-align: center;
+      }
+      .text {
+        color: #000;
+        font-size: .875em;
+        left: 100%;
+        line-height: 1.3;
+        margin: 0 0 0 20px;
+        position: absolute;
+        top: 4px;
+        width: 200px;
+      }
+      .description {
+        position: absolute;
+        visibility: hidden;
+      }
+      &:hover,
+      &.hover {
+        &:before {
+          background: #000;
+          bottom: -5px;
+          content: "";
+          display: block;
+          left: -5px;
+          position: absolute;
+          right: -5px;
+          top: -5px;
+        }
+      }
+    }
+  }
+  .carousel-item {
+    float: left;
+  }
+  .owl-controls {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    
+    .owl-pagination {
+      height: 13px;
+      margin: 0 0 0 4px;
+      padding: 0;
+      text-align: left;
+      vertical-align: top;
+      width: 100%;
+    }
+    .owl-buttons {
+      .owl-prev,
+      .owl-next {
+        display: none !important;
+      }
+    }
+  }
+}
+/* Numbered List Description */
+.numbered-list-description {
+  background: #f2f2f2;
+  border: 0 none;
+  @include border-r(50%);
+  font-size: .875em;
+  height: 380px;
+  left: 50%;
+  margin: -190px 0 0 -190px;
+  padding: 66px 55px 66px 65px;
+  position: absolute;
+  text-align: left;
+  top: 50%;
+  @include transition(visibility);
+  visibility: hidden;
+  width: 380px;
+  @media (max-width: $media-xs) {
+    bottom: 0;
+    @include border-r(0);
+    height: auto;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: auto;
+    z-index: 999;
+    -webkit-animation-name: none;
+    animation-name: none;
+  }
+  .tab-pane {
+    font-size: 1em;
+    height: 100%;
+    overflow: hidden;
+    visibility: hidden;
+    
+    .mCustomScrollBox {
+      padding-right: 10px;
+      
+      .mCS_y_hidden {
+        display: table;
+        height: 100%;
+        @media (max-width: $media-xs) {
+          display: block;
+        }
+        
+        .tab-pane-wrap {
+          display: table-cell;
+          vertical-align: middle;
+          @media (max-width: $media-xs) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .close {
+    border: 0 none;
+    color: #768088;
+    display: block;
+    fill: #768088;
+    font-size: 1em;
+    height: 15px;
+    left: 50%;
+    line-height: 1;
+    margin-left: -7.5px;
+    opacity: 1;
+    position: absolute;
+    top: 20px;
+    text-shadow: none;
+    @include transition(fill);
+    visibility: hidden;
+    width: 15px;
+    
+    &:hover {
+      fill: $danger;
+    }
+  }
+  &.open {
+    visibility: visible;
+    
+    .tab-pane.active,
+    .close {
+      visibility: visible;
+    }
+  }
+  &.inverse {
+    background: #fff;
+  }
+}

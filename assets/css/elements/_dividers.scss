@@ -1,0 +1,50 @@
+/******************************************************************************
+  Dividers
+*******************************************************************************/
+.divider {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+  .title {
+    display: table-cell;
+    font-size: 48px;
+    font-family: $miso-l;
+    font-weight: 300;
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  
+  .line {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    
+    &:only-child {
+      display: block;
+      width: 100%;
+    }
+    
+    &:before {
+      border-top: 1px solid #ccc;
+      border-top: 1px solid rgba(0,0,0,.1);
+      content: "";
+      display: block;
+      margin-right: 16px;
+    }
+    &:only-child:before {
+      margin-right: 0;
+    }
+  }
+  
+  .title + .line:before {
+    margin: 0 0 0 16px;
+  }
+  
+  &.left,
+  &.right {
+    .line {
+      width: 100%;
+    }
+  }
+}

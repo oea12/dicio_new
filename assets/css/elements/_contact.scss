@@ -1,0 +1,81 @@
+/******************************************************************************
+  Contact
+*******************************************************************************/
+/* Contact Info */
+.contact-info {
+  font-weight: 300;
+  line-height: 1.375;
+  margin-bottom: 27px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .icon {
+    border-right: 1px solid #dbe0e5;
+    float: left;
+    font-size: 24px;
+    height: 45px;
+    line-height: 40px;
+    margin: 0 20px 0 0;
+    width: 40px;
+
+    .fa {
+      text-align: center;
+      width: 25px;
+    }
+    .fa-mobile,
+    .fa-map-marker {
+      font-size: 30px;
+      line-height: 42px;
+    }
+  }
+  .title {
+    font-size: 1.125em;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 3px;
+  }
+  address {
+    font-weight: 300;
+    line-height: 1.375;
+    margin-bottom: 0;
+  }
+  a {
+    font-size: 1em;
+  }
+  .text {
+    overflow: hidden;
+  }
+}
+/* Contact Form */
+.contact-form {
+  @media (max-width: $media-xs) {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  
+  .form-title {
+    font-size: 1.125em;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 23px;
+  }
+  .form-group {
+    margin-bottom: 10px;
+    
+    &.comment {
+      margin-bottom: 30px;
+    }
+  }
+  textarea {
+    height: 120px;
+  }
+  .btn {
+    margin: 0 10px 0 0;
+  }
+  .form-message {
+    display: inline-block;
+    margin: 5px 0 0;
+    vertical-align: top;
+  }
+}

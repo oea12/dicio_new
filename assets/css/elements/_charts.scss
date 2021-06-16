@@ -1,0 +1,36 @@
+/******************************************************************************
+  Charts
+*******************************************************************************/
+.chart {
+  background: #fff;
+  @include border-r(3px);
+  color: #fff;
+  
+  .jqplot-data-label {
+    color: #fff;
+    font-size: .75em;
+    font-family: $lato;
+    font-weight: 900;
+  }
+  .jqplot-table-legend {
+    background: none;
+    border: 0 none;
+    margin-left: 0;
+    margin-right: 0;
+    
+    .jqplot-table-legend-swatch {
+      border-radius: 50px;
+      border: 8px solid;
+      display: inline-block;
+      height: 16px;
+      vertical-align: top;
+      width: 16px;
+    }
+    .jqplot-table-legend {
+      color: #777;
+      font-size: 13px;
+      line-height: 1;
+      padding-left: 7px;
+    }
+  }
+}

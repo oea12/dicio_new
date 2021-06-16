@@ -1,0 +1,357 @@
+/******************************************************************************
+  Facts
+*******************************************************************************/
+.facts {
+  margin-top: 10px;
+  @media (max-width: $media-xs) {
+    margin: 10px auto 0;
+    width: 290px;
+  }
+    
+  .facts-title {
+    background: #f2f2f2;
+    @include border-r(50%);
+    display: table;
+    height: 260px;
+    margin: 0 auto -45px;
+    position: relative;
+    width: 260px;
+    z-index: 1;
+    @media (max-width: $media-sm) {
+      margin-bottom: 5px;
+    }
+    @media (max-width: $media-xs) {
+      margin-bottom: 14px;
+    }
+
+    &:after {
+      @include border-r(50%);
+      bottom: 0;
+      content: "";
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      -webkit-animation: pulse 2s ease-in-out infinite;
+      animation: pulse 2s ease-in-out infinite;
+      z-index: 0;
+    }
+    &:before {
+      border: 1px solid #dbe0e5;
+      @include border-r(50%);
+      bottom: 6px;
+      content: "";
+      left: 6px;
+      position: absolute;
+      right: 6px;
+      top: 6px;
+    }
+    .line {
+      border: 1px solid rgba(0,0,0,0.03);
+      @include border-r(50%);
+      bottom: -49px;
+      content: "";
+      left: -49px;
+      pointer-events: none;
+      position: absolute;
+      right: -49px;
+      top: -49px;
+      z-index: 0;
+      @media (max-width: $media-xs) {
+        display: none;
+      }
+      
+      + .line {
+        bottom: -123px;
+        left: -123px;
+        right: -123px;
+        top: -123px;
+        
+        + .line {
+          bottom: -213px;
+          left: -213px;
+          right: -213px;
+          top: -213px;
+          
+          + .line {
+            bottom: -318px;
+            left: -318px;
+            right: -318px;
+            top: -318px;
+          }
+        }
+      }
+    }
+    .title-wrap {
+      display: table-row;
+      height: 100%;
+      width: 100%;
+      
+      .title {
+        display: table-cell;
+        font-size: 1.5em;
+        padding: 25px;
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+  }
+  .facts-list {
+    margin: 0 auto;
+    max-width: 1100px;
+    z-index: 1;
+    @media (max-width: $media-sm) {
+      max-width: 630px;
+    }
+    
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+      width: 100%;
+    }
+    
+    .fact {
+      float: left;
+      height: 170px;
+      position: relative;
+      width: 170px;
+      
+      &:before {
+        background: rgba(0,0,0,.03);
+        content: "";
+        display: block;
+        height: 1px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform-origin: left top;
+        transform: rotate(-20deg);
+        width: 400px;
+        @media (max-width: $media-md) {
+          transform: rotate(-23.5deg);
+        }
+        @media (max-width: $media-sm) {
+          transform: rotate(-44deg);
+          width: 320px;
+        }
+        @media (max-width: $media-xs) {
+          transform: rotate(-76deg);
+          width: 240px;
+        }
+      }
+      .fa {
+        font-size: 15px;
+        left: 50%;
+        margin: -53px 0 0 -8px;
+        opacity: .7;
+        position: absolute;
+        top: 50%;
+        vertical-align: top;
+        z-index: 1;
+        
+        &:before {
+          margin-left: 1px;
+        }
+      }
+      .skill-wrap {
+        background: #f2f2f2;
+        cursor: pointer;
+        height: 150px;
+        margin: 10px;
+        padding: 2px;
+        transition:
+          height 0.2s ease-in-out,
+          margin 0.2s ease-in-out,
+          padding 0.2s ease-in-out,
+          width 0.2s ease-in-out;
+        width: 150px;
+        z-index: 1;
+        
+        &:hover {
+          height: 170px;
+          margin: 0;
+          padding: 8px;
+          width: 170px;
+        }
+        .skill-percent {
+          font-size: 3.125em;
+          margin-top: -34px;
+          top: 50%;
+        }
+        .skill-name {
+          color: #768088;
+          font-size: .8125em;
+          margin-top: 22px;
+          top: 50%;
+        }
+        canvas {
+          height: 100%;
+          width: 100%;
+        }
+        &.full-skill {
+          &:before {
+            border: 1px solid #000;
+            @include border-r(50%);
+            bottom: 5px;
+            content: "";
+            left: 5px;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            transition:
+              bottom 0.2s ease-in-out,
+              left 0.2s ease-in-out,
+              right 0.2s ease-in-out,
+              top 0.2s ease-in-out;
+          }
+          &:hover:before {
+            bottom: 12px;
+            left: 12px;
+            right: 12px;
+            top: 12px;
+          }
+          &.text-primary {
+            &:before {
+              border-color: $primary;
+            }
+          }
+          &.text-success {
+            &:before {
+              border-color: $success;
+            }
+          }
+          &.text-info {
+            &:before {
+              border-color: $info;
+            }
+          }
+          &.text-warning {
+            &:before {
+              border-color: $warning;
+            }
+          }
+          &.text-danger {
+            &:before {
+              border-color: $danger;
+            }
+          }
+        }
+      }
+      & + .fact {
+        float: right;
+        @media (max-width: $media-xs) {
+          margin-top: -50px;
+        }
+        
+        &:before {
+          transform: rotate(-160deg);
+          @media (max-width: $media-md) {
+            transform: rotate(-156.5deg);
+          }
+          @media (max-width: $media-sm) {
+            transform: rotate(-136deg);
+          }
+          @media (max-width: $media-xs) {
+            transform: rotate(-135deg);
+            width: 170px;
+          }
+        }
+      }
+    }
+    & + .facts-list {
+      margin-top: 14px;
+      max-width: 470px;
+      @media (max-width: $media-sm) {
+        margin-top: 74px;
+        max-width: 430px;
+      }
+      @media (max-width: $media-xs) {
+        margin-top: 0;
+      }
+      
+      .fact {
+        @media (max-width: $media-xs) {
+          margin-top: -50px;
+        }
+        &:before {
+          transform: rotate(-67deg);
+          @media (max-width: $media-sm) {
+            transform: rotate(-74.5deg);
+            width: 480px;
+          }
+          @media (max-width: $media-xs) {
+            transform: rotate(-45deg);
+            width: 170px;
+          }
+        }
+        & + .fact {
+          &:before {
+            transform: rotate(-113deg);
+            @media (max-width: $media-sm) {
+              transform: rotate(-105.5deg);
+            }
+            @media (max-width: $media-xs) {
+              transform: rotate(-135deg);
+            }
+          }
+        }
+      }
+      .fact:only-child {
+        float: none;
+        margin: 0 auto;
+        @media (max-width: $media-xs) {
+          float: left;
+          margin: -70px 0 0;
+        }
+        
+        &:before {
+          transform: rotate(-90deg);
+          @media (max-width: $media-sm) {
+            width: 480px;
+          }
+          @media (max-width: $media-xs) {
+            transform: rotate(-36deg);
+            width: 170px;
+          }
+        }
+      }
+    }
+  }
+  
+  // Inverse
+  &.inverse {
+    .facts-title {
+      &:after {
+        -webkit-animation: pulse-inverse 2s ease-in-out infinite;
+        animation: pulse-inverse 2s ease-in-out infinite;
+      }
+      &:before {
+        border: 1px solid #dbe0e5;
+      }
+      .line {
+        border-color: rgba(#fff,.12);
+        
+        + .line {
+          border-color: rgba(#fff,.1);
+          
+          + .line {
+            border-color: rgba(#fff,.06);
+            
+            + .line {
+              border-color: rgba(#fff,.04);
+            }
+          }
+        }
+      }
+    }
+    .facts-list {
+      .fact {
+        &:before {
+          background: rgba(#fff,.17);
+        }
+      }
+    }
+  }
+}

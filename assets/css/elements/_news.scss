@@ -1,0 +1,121 @@
+/******************************************************************************
+  News
+*******************************************************************************/
+.news {
+  .meta {
+    color: #768088;
+    font-size: 0.875em;
+    font-weight: 300;
+    line-height: 1.6;
+    padding-top: 51px;
+    text-align: right;
+  }
+  .news-content {
+    .title {
+      color: #375099;
+      font-family: $lato;
+      font-size: 1.5em;
+      font-weight: 300;
+      margin-bottom: 21px;
+      text-transform: none;
+      
+      a {
+        border: 0 none !important;
+        color: inherit;
+        font-size: 1em;
+        @include transition(opacity);
+        
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+    .description {
+      font-size: 1em;
+      line-height: 1.375;
+      margin-bottom: 25px;
+    }
+    .more {
+      border: 0 none !important;
+      color: #375099;
+      display: inline-block;
+      font-size: 1em;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1;
+      @include transition(opacity);
+      vertical-align: top;
+      
+      .fa {
+        margin-left: 3px;
+        vertical-align: text-bottom;
+      }
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}
+/* News Carousel */
+.carousel.news-carousel {
+  .news {
+    @media (max-width: $media-xs) {
+      .meta {
+        margin: 0 0 20px;
+        padding-top: 0;
+        text-align: left;
+      }
+    }
+  }
+  .owl-buttons {
+    display: block;
+    left: 100%;
+    position: absolute;
+    top: 57px;
+    text-align: center;
+    width: 20%;
+    @media (max-width: $media-xs) {
+      left: 0;
+      position: relative;
+      top: 0;
+      width: 100%;
+    }
+    
+    .owl-prev,
+    .owl-next {
+      color: #aac0d0;
+      display: inline-block;
+      left: 0;
+      margin: 0 10px;
+      position: relative;
+      right: 0;
+      vertical-align: top;
+      
+      &:after {
+        background: #aac0d0;
+      }
+    }
+  }
+  &.second-type {
+    .meta {
+      margin-bottom: 30px;
+      @media (max-width: $media-xs) {
+        margin-bottom: 20px;
+      }
+    }
+    .owl-buttons {
+      bottom: 3px;
+      left: 0;
+      padding: 0 15px;
+      text-align: right;
+      top: auto;
+      width: 25%;
+      @media (max-width: $media-xs) {
+        position: relative;
+        text-align: center;
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+}

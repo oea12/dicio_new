@@ -1,0 +1,259 @@
+/******************************************************************************
+  Pricings
+*******************************************************************************/
+.pricing {
+  background: rgba(#000,.05);
+  @include border-r(3px);
+  color: #777;
+  font-size: .875em;
+  line-height: 1.5;
+  margin: 0 auto 30px;
+  max-width: 293px;
+  padding: 16px 0 30px;
+  text-align: center;
+  
+  .icon {
+    font-size: 4em;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto 16px;
+    width: 80px;
+    
+    &.border {
+      border: 1px solid #777;
+      @include border-r(50%);
+      font-size: 2em;
+    }
+    &.background {
+      background: #777;
+      @include border-r(50%);
+      color: #fff;
+      font-size: 2em;
+    }
+    .fa {
+      line-height: inherit;
+      vertical-align: top;
+    }
+  }
+  .title {
+    font-size: 2em;
+    line-height: 1.58;
+    margin: 0 0 26px;
+  }
+  .options {
+    border-top: 1px solid #777;
+    border-top: 1px solid rgba(#000,.05);
+    list-style: none;
+    margin: 0 0 26px;
+    padding: 0;
+    
+    li {
+      border-bottom: 1px solid #777;
+      border-bottom: 1px solid rgba(#000,.05);
+      padding: 14px 0 14px;
+    }
+  }
+  .price-box {
+    border-bottom: 1px solid #777;
+    border-bottom: 1px solid rgba(#000,.05);
+    line-height: 1;
+    padding: 0 0 30px;
+    
+    .price {
+      font-size: 2.25em;
+    }
+    .price-label {
+      color: #999;
+      font-size: .85em;
+      font-weight: 500;
+    }
+  }
+  .btn {
+    margin: 29px auto 0;
+  }
+  // Pricings Color
+  &.pricing-primary {
+    .icon {
+      color: $primary;
+      
+        &.border {
+        border-color: $primary;
+      }
+      
+      &.background {
+        background: $primary;
+        color: #fff;
+      }
+    }
+    .title,
+    .price-box .price {
+      color: $primary;
+    }
+  }
+  &.pricing-success {
+    .icon {
+      color: $success;
+      
+        &.border {
+        border-color: $success;
+      }
+      
+      &.background {
+        background: $success;
+        color: #fff;
+      }
+    }
+    .title,
+    .price-box .price {
+      color: $success;
+    }
+  }
+  &.pricing-info {
+    .icon {
+      color: $info;
+      
+        &.border {
+        border-color: $info;
+      }
+      
+      &.background {
+        background: $info;
+        color: #fff;
+      }
+    }
+    .title,
+    .price-box .price {
+      color: $info;
+    }
+  }
+  &.pricing-warning {
+    .icon {
+      color: $warning;
+      
+        &.border {
+        border-color: $warning;
+      }
+      
+      &.background {
+        background: $warning;
+        color: #fff;
+      }
+    }
+    .title,
+    .price-box .price {
+      color: $warning;
+    }
+  }
+  &.pricing-danger {
+    .icon {
+      color: $danger;
+      
+        &.border {
+        border-color: $danger;
+      }
+      
+      &.background {
+        background: $danger;
+        color: #fff;
+      }
+    }
+    .title,
+    .price-box .price {
+      color: $danger;
+    }
+  }
+  .inverse & {
+    background: #fff;
+    background: rgba(#fff,.98);
+  }
+}
+/* Pricings Simple */
+.pricing-simple {
+  max-width: 370px;
+  padding: 0;
+  
+  .header {
+    background: rgba(#000,.05);
+    border-radius: 3px 3px 0 0;
+    display: table;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    
+    .icon {
+      font-size: 3em;
+      height: 62px;
+      left: 20px;
+      line-height: 62px;
+      margin: -31px 0 0;
+      position: absolute;
+      top: 50%;
+      width: 62px;
+      
+      &.border,
+      &.background {
+        font-size: 2.3em;
+      }
+    }
+    .title {
+      display: table-cell;
+      font-size: 1.57em;
+      height: 60px;
+      line-height: 1.37;
+      margin: 0;
+      padding: 0 65px;
+      vertical-align: middle;
+    }
+  }
+  .options {
+    border: 0 none;
+    
+    li {
+      border: 0 none;
+      line-height: 1.6;
+      
+      &:nth-child(2n) {
+        background: rgba(#000,.05);
+      }
+      &:last-child {
+        border-radius: 0 0 3px 3px;
+      }
+    }
+  }
+  // Pricings Simple Color
+  &.pricing-primary {
+    .header,
+    .options li:nth-child(2n) {
+      background: rgba($primary,.05);
+    }
+  }
+  &.pricing-success {
+    .header,
+    .options li:nth-child(2n) {
+      background: rgba($success,.05);
+    }
+  }
+  &.pricing-info {
+    .header,
+    .options li:nth-child(2n) {
+      background: rgba($info,.05);
+    }
+  }
+  &.pricing-warning {
+    .header,
+    .options li:nth-child(2n) {
+      background: rgba($warning,.05);
+    }
+  }
+  &.pricing-danger {
+    .header,
+    .options li:nth-child(2n) {
+      background: rgba($danger,.05);
+    }
+  }
+}
+.pricings-carousel {
+  .pricing {
+    margin-bottom: 0;
+  }
+}

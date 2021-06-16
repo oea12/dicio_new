@@ -1,0 +1,510 @@
+/******************************************************************************
+  Services
+*******************************************************************************/
+// Services Animation
+@-webkit-keyframes pulse {
+  from {
+    background-color: rgba(#000,.03);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    background-color: rgba(#000,0);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  to {
+    background-color: rgba(#000,0);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }   
+}
+@keyframes pulse {
+  from {
+    background-color: rgba(#000,.03);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    background-color: rgba(#000,0);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  to {
+    background-color: rgba(#000,0);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }   
+}
+@-webkit-keyframes pulse-inverse {
+  from {
+    background-color: rgba(#fff,.2);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    background-color: rgba(#fff,0);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  to {
+    background-color: rgba(#fff,0);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }   
+}
+@keyframes pulse-inverse {
+  from {
+    background-color: rgba(#fff,.2);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    background-color: rgba(#fff,0);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  to {
+    background-color: rgba(#fff,0);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }   
+}
+
+.services-wrap {
+  display: table;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  @media (max-width: $media-xs) {
+    display: block;
+    padding: 317px 0 25px;
+  }
+  
+  &.services-opened {
+    @media (max-width: $media-xs) {
+      z-index: inherit;
+    }
+  }
+  .wrap-container {
+    display: table-row;
+    @media (max-width: $media-xs) {
+      display: block;
+      margin: 0 auto;
+      width: 290px;
+    }
+    
+    .column {
+      display: table-cell;
+      vertical-align: middle;
+      width: 25%;
+      @media (max-width: $media-xs) {
+        display: block;
+        width: 100% !important;
+      }
+      
+      .circle-wrap {
+        @include border-r(500px);
+        height: 170px;
+        position: relative;
+        width: 150px;
+        @media (max-width: $media-sm) {
+          width: 112px;
+        }
+        @media (max-width: $media-xs) {
+          height: 120px;
+          margin: 0;
+          width: 100%;
+        }
+        
+        .skill-wrap {
+          background: none;
+          cursor: pointer;
+          display: block;
+          height: 170px;
+          margin-left: -10px;
+          padding: 12px;
+          @include transition(padding);
+          width: 170px;
+          @media (max-width: $media-xs) {
+            margin: 0;
+            top: -25px;
+          }
+          
+          &:before {
+            background: #f2f2f2;
+            @include border-r(500px);
+            bottom: 10px;
+            content: "";
+            display: block;
+            left: 10px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            transition:
+              bottom 0.2s ease-in-out,
+              left 0.2s ease-in-out,
+              right 0.2s ease-in-out,
+              top 0.2s ease-in-out;
+          }
+          &:hover {
+            padding: 8px;
+            
+            &:before {
+              bottom: 0;
+              left: 0;
+              right: 0;
+              top: 0;
+            }
+          }
+          canvas {
+            height: 100%;
+            position: relative;
+            width: 100%;
+          }
+          .skill-percent {
+            display: none;
+          }
+          .skill-name {
+            color: #1e2d3a;
+            font-family: $miso;
+            font-size: 1.125em;
+            font-weight: bold;
+            left: 15px;
+            margin-top: -9px;
+            right: 15px;
+            text-transform: uppercase;
+            top: 50%;
+          }
+          .double-name + .skill-percent + .skill-name {
+            margin-top: -18px;
+          }
+          .line {
+            backface-visibility: hidden;
+            height: 1px;
+            left: 50%;
+            margin: -.5px 0 0;
+            position: absolute;
+            top: 50%;
+            transform-origin: left top;
+            z-index: -1;
+            @media (max-width: $media-xs) {
+              transform: rotate(-45deg) !important;
+              width: 169px !important;
+            }
+            
+            .default {
+              background: rgba(#000, .03);
+              height: 100%;
+              left: 0;
+              position: absolute;
+              top: 0;
+              width: 100%;
+            }
+            .active {
+              background: rgba(#000, .1);
+              height: 100%;
+              left: 0;
+              position: absolute;
+              width: 0;
+              @media (max-width: $media-xs) {
+                display: none;
+              }
+            }
+          }
+        }
+        &.active {
+          .skill-wrap {
+            padding: 10px;
+            
+            &:before {
+              bottom: 0;
+              left: 0;
+              right: 0;
+              top: 0;
+            }
+          }
+        }
+        .description {
+          display: none;
+        }
+      }
+      &.column-two {
+        .circle-wrap {
+          margin: 0 0 120px auto;
+          @media (max-width: $media-sm) {
+            margin-bottom: 252px;
+          }
+          @media (max-width: $media-xs) {
+            margin-bottom: 0;
+          }
+
+          & + .circle-wrap {
+            margin-bottom: 0;
+          }
+        }
+      }
+      &.column-three {
+        min-width: 400px;
+        padding: 0 8px;
+        position: relative;
+        width: 400px;
+        @media (max-width: $media-md) {
+          min-width: 340px;
+          width: 340px;
+        }
+        @media (max-width: $media-sm) {
+          min-width: 172px;
+          width: 172px;
+        }
+        @media (max-width: $media-xs) {
+          min-width: inherit;
+          padding: 0;
+          position: static;
+          width: inherit;
+        }
+        
+        .circle-wrap {
+          margin: 0 auto;
+          width: 170px;
+          @media (max-width: $media-xs) {
+            margin: 0;
+            width: 100%;
+          }
+          
+          .skill-wrap {
+            margin-left: 0;
+            .line {
+              margin: 0;
+              transform: rotate(-90deg);
+            }
+          }
+          &:first-child {
+            .skill-wrap {
+              .line {
+                transform: rotate(90deg);
+              }
+            }
+          }
+        }
+        
+        .main-circle {
+          background: #f2f2f2;
+          height: 260px;
+          margin: 70px auto;
+          min-height: 260px;
+          padding: 55px 25px;
+          text-align: center;
+          width: 260px;
+          z-index: 1;
+          @media (max-width: $media-xs) {
+            animation: none;
+            left: 50%;
+            margin: 0 0 0 -130px;
+            position: absolute;
+            top: 0;
+          }
+          
+          &:before {
+            @include border-r(500px);
+            bottom: 0;
+            content: "";
+            display: block;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            -webkit-animation: pulse 2s ease-in-out infinite;
+            animation: pulse 2s ease-in-out infinite;
+            z-index: -1;
+          }
+          .circle-content {
+            display: table-cell;
+            height: 150px;
+            vertical-align: middle;
+            width: 100%;
+            
+            .title {
+              font-size: 1.5em;
+              margin: 0;
+            }
+          }
+          .opened-content {
+            background: #f2f2f2;
+            @include border-r(500px);
+            bottom: -70px;
+            font-size: .875em;
+            line-height: 1.5;
+            left: -70px;
+            opacity: 0;
+            padding: 59px 50px 59px 70px;
+            position: absolute;
+            right: -70px;
+            top: -70px;
+            visibility: hidden;
+            z-index: -1;
+            @media (max-width: $media-md) {
+              bottom: -60px;
+              left: -60px;
+              right: -60px;
+              top: -60px;
+            }
+            @media (max-width: $media-sm) {
+              bottom: -55px;
+              left: -55px;
+              right: -55px;
+              top: -55px;
+            }
+            @media (max-width: $media-xs) {
+              background: #fff;
+              bottom: 0;
+              @include border-r(0);
+              left: 0;
+              position: fixed;
+              right: 0;
+              top: 0;
+            }
+            
+            &.opened {
+              visibility: visible;
+              -webkit-transform: translateZ(0);
+              z-index: 999;
+            }
+            .close {
+              border: 0 none;
+              color: #768088;
+              display: block;
+              fill: #768088;
+              font-size: 1em;
+              height: 15px;
+              left: 50%;
+              line-height: 1;
+              margin-left: -7.5px;
+              opacity: 1;
+              position: absolute;
+              top: 20px;
+              text-shadow: none;
+              @include transition(fill);
+              width: 15px;
+              
+              &:hover {
+                fill: $danger;
+              }
+            }
+            .description {
+              display: block;
+              
+              .title {
+                font-size: 1.5em;
+                margin-bottom: 18px;
+                padding-right: 20px;
+              }
+              .text {
+                height: 190px;
+                text-align: left;
+                @media (max-width: $media-xs) {
+                  height: auto;
+                }
+              }
+              p {
+                margin-bottom: 21px;
+                
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.column-four {
+        .circle-wrap {
+          margin: 0 0 120px 0;
+          @media (max-width: $media-sm) {
+            margin-bottom: 252px;
+          }
+          @media (max-width: $media-xs) {
+            margin-bottom: 0;
+          }
+          
+          & + .circle-wrap {
+            margin-bottom: 0;
+          }
+          .skill-wrap {
+            @media (max-width: $media-sm) {
+              margin-left: -48px;
+            }
+            @media (max-width: $media-xs) {
+              margin: 0;
+            }
+          }
+        }
+      }
+      &.column-five {
+        .circle-wrap {
+          margin: 0 0 0 auto;
+          
+          .skill-wrap {
+            @media (max-width: $media-sm) {
+              margin-left: -48px;
+            }
+            @media (max-width: $media-xs) {
+              margin: 0;
+            }
+            
+            .line {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+      
+      .even {
+        .skill-wrap {
+          @media (max-width: $media-xs) {
+            margin-left: auto !important;
+          }
+          
+          .line {
+            @media (max-width: $media-xs) {
+              transform: rotate(-135deg) !important;
+            }
+          }
+        }
+      }
+      .first {
+        .skill-wrap {
+          .line {
+            @media (max-width: $media-xs) {
+              transform: rotate(-76deg) !important;
+              width: 256px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Inverse
+  &.inverse {
+    .wrap-container {
+      .column {
+        .circle-wrap {
+          .skill-wrap .line {
+            .default {
+              background: rgba(#fff,.15);
+            }
+            .active {
+              background: #fff;
+            }
+          }
+          &.main-circle {
+            &:before {
+              -webkit-animation: pulse-inverse 2s ease-in-out infinite;
+              animation: pulse-inverse 2s ease-in-out infinite;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+/******************************************************************************
+  Features
+*******************************************************************************/
+.feature-box,
+a.feature-box {
+  background: rgba(#000,.05);
+  border: 0 none !important;
+  @include border-r(3px);
+  color: #777;
+  display: block;
+  font-size: .875em;
+  line-height: 1.7;
+  margin: 0 auto 30px;
+  max-width: 345px;
+  padding: 30px 25px 28px;
+  text-align: center;
+  
+  .icon {
+    font-size: 4em;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto 16px;
+    width: 80px;
+    
+    &.border {
+      border: 1px solid #777;
+      @include border-r(50%);
+      font-size: 2em;
+    }
+    &.background {
+      background: #777;
+      @include border-r(50%);
+      color: #fff;
+      font-size: 2em;
+    }
+    .fa {
+      line-height: inherit;
+      vertical-align: top;
+    }
+  }
+  .title {
+    font-size: 1.5em;
+    line-height: 1.55;
+    margin: 0 0 3px;
+  }
+  &.feature-box-primary {
+    .icon {
+      color: $primary;
+      
+        &.border {
+        border-color: $primary;
+      }
+      
+      &.background {
+        background: $primary;
+        color: #fff;
+      }
+    }
+    .title {
+      color: $primary;
+    }
+  }
+  &.feature-box-success {
+    .icon {
+      color: $success;
+      
+        &.border {
+        border-color: $success;
+      }
+      
+      &.background {
+        background: $success;
+        color: #fff;
+      }
+    }
+    .title {
+      color: $success;
+    }
+  }
+  &.feature-box-info {
+    .icon {
+      color: $info;
+      
+        &.border {
+        border-color: $info;
+      }
+      
+      &.background {
+        background: $info;
+        color: #fff;
+      }
+    }
+    .title {
+      color: $info;
+    }
+  }
+  &.feature-box-warning {
+    .icon {
+      color: $warning;
+      
+        &.border {
+        border-color: $warning;
+      }
+      
+      &.background {
+        background: $warning;
+        color: #fff;
+      }
+    }
+    .title {
+      color: $warning;
+    }
+  }
+  &.feature-box-danger {
+    .icon {
+      color: $danger;
+      
+        &.border {
+        border-color: $danger;
+      }
+      
+      &.background {
+        background: $danger;
+        color: #fff;
+      }
+    }
+    .title {
+      color: $danger;
+    }
+  }
+}

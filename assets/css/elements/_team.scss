@@ -1,0 +1,63 @@
+/******************************************************************************
+  Team
+*******************************************************************************/
+.employee {
+  background: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(#000,.1);
+  margin: 0 auto 30px;
+  max-width: 370px;
+  padding: 9px;
+  position: relative;
+  
+  .image {
+    float: left;
+    padding-right: 20px;
+    width: 140px;
+  }
+  .employee-content {
+    overflow: hidden;
+    padding: 0 0 30px;
+    
+    .title {
+      font-size: 1.125em;
+      margin: 5px 0 1px;
+    }
+    .post {
+      color: #768088;
+      font-size: .75em;
+      line-height: 1.4;
+    }
+    .description {
+      display: -webkit-box;
+      font-size: .8125em;
+      font-weight: 500;
+      line-height: 1.38;
+      margin: 19px 0 0;
+      max-height: 50px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+    .social {
+      bottom: 10px;
+      position: absolute;
+      
+      a {
+        border: 0 none;
+        display: block;
+        float: left;
+        font-size: .7em;
+        margin: 0 28px 0 0;
+        
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover {
+          color: $danger;
+        }
+      }
+    }
+  }
+}

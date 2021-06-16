@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?756f84bab7adafa38608e7ea4dde74f3") format("truetype"),
+url("./flaticon.woff?756f84bab7adafa38608e7ea4dde74f3") format("woff"),
+url("./flaticon.woff2?756f84bab7adafa38608e7ea4dde74f3") format("woff2"),
+url("./flaticon.eot?756f84bab7adafa38608e7ea4dde74f3#iefix") format("embedded-opentype"),
+url("./flaticon.svg?756f84bab7adafa38608e7ea4dde74f3#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-sello:before {
+    content: "\f101";
+}
+.flaticon-blockchain:before {
+    content: "\f102";
+}
+.flaticon-reproductor-de-video:before {
+    content: "\f103";
+}
+.flaticon-reconocimiento-facial:before {
+    content: "\f104";
+}
+.flaticon-reconocimiento-facial-1:before {
+    content: "\f105";
+}
+.flaticon-contrato:before {
+    content: "\f106";
+}
+.flaticon-usuario:before {
+    content: "\f107";
+}
+.flaticon-phone:before {
+    content: "\f108";
+}
+.flaticon-save-money:before {
+    content: "\f109";
+}
+.flaticon-embassy:before {
+    content: "\f10a";
+}
+.flaticon-hospital:before {
+    content: "\f10b";
+}
+.flaticon-life-insurance:before {
+    content: "\f10c";
+}
+.flaticon-store:before {
+    content: "\f10d";
+}
+.flaticon-delivery:before {
+    content: "\f10e";
+}
+.flaticon-online-shopping:before {
+    content: "\f10f";
+}
+.flaticon-earth-grid:before {
+    content: "\f110";
+}

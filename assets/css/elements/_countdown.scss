@@ -1,0 +1,43 @@
+/******************************************************************************
+  Countdown
+*******************************************************************************/
+.countdown {
+  width: 100%;
+  
+  .time_circles {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    
+    canvas {
+      max-width: 100%;
+      position: relative;
+      vertical-align: top;
+    }
+    > div {
+      position: absolute;
+      text-align: center;
+      width: 25% !important;
+      
+      &.textDiv_Hours {
+        left: 25% !important;
+      }
+      &.textDiv_Minutes {
+        left: 50% !important;
+      }
+      &.textDiv_Seconds {
+        left: 75% !important;
+      }
+      h4 {
+        color: inherit;
+        @media (max-width: $media-xs) {
+          margin: 0 0 5px;
+        }
+      }
+      span {
+        line-height: .7 !important;
+        vertical-align: top;
+      }
+    }
+  }
+}

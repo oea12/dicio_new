@@ -1,0 +1,38 @@
+/******************************************************************************
+  Actions
+*******************************************************************************/
+.actions {
+  margin: 50px 0 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  
+  .action {
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    
+    &.action-1 {
+      bottom: auto;
+      left: auto;
+      position: relative;
+      z-index: 3;
+    }
+    &.action-2 {
+      margin-left: -267px;
+      z-index: 2;
+    }
+    &.action-3 {
+      margin-left: 13px;
+      z-index: 2;
+    }
+    &.action-4 {
+      margin-left: -392px;
+      z-index: 1;
+    }
+    &.action-5 {
+      margin-left: 146px;
+      z-index: 1;
+    }
+  }
+}
