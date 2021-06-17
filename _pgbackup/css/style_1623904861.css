@@ -2514,6 +2514,7 @@ floating
     opacity: 0;
     visibility: hidden;
     transition: 0.4s;
+    margin-bottom: 36px;
 }
 
 .team-staff:hover .team-overlay {
@@ -2605,7 +2606,8 @@ floating
 }
 
 .team-overlay-inner {
-    position: fixed;
+    position: absolute;
+    bottom: 46px;
     left: 0px;
     right: 0px;
     width: 100%;
@@ -12346,8 +12348,6 @@ IMG_BRAND {
 }
 
 .col-xs-12 {
-    padding-bottom: 0px;
-    height: 644px;
 }
 
 .newclass {
@@ -12368,7 +12368,7 @@ IMG_BRAND {
     width: 86%;
     height: 43%;
     border-radius: 27px;
-    top: 191px;
+    top: 179px;
 }
 
 .hello3 {
@@ -12531,33 +12531,4 @@ IMG_BRAND {
 .pilares {
     padding-top: 0px;
     position: relative;
-}
-
-@media screen and (max-width:1199px) {
-    .img-shadow3 {
-        display: none;
-    }
-
-    .img-shadow32 {
-    }
-}
-
-@media screen and (max-width:1199px) {
-}
-
-.equipo {
-    margin-top: -96px;
-    padding-top: 85px;
-}
-
-@media screen and (max-width:1199px) {
-    .equipo {
-        height: 576px;
-    }
-}
-
-@media (min-width:1200px) {
-    equipo {
-        height: 66px;
-    }
 }

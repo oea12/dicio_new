@@ -49,7 +49,7 @@
                             <span data-text-preloader="O" class="letters-loading">
 								O </span>
                         </div>
-                    </div>                     
+                    </div>
                     <div class="loader-section section-left"></div>
                     <div class="loader-section section-right"></div>
                 </div>
@@ -67,16 +67,16 @@
                             <a class="nav-link dropdown-toggle" href="#" id="homeMenu" data-toggle="dropdown">
                             Inicio </a>
                             <div class="dropdown-menu" aria-labelledby="homeMenu">
-                                <a class="dropdown-item active" href="index.html">Pilares</a>
-                                <a class="dropdown-item" href="index-1.html">Servicios</a>
-                                <a class="dropdown-item" href="index-2.html">Tecnología</a>
-                                <a class="dropdown-item" href="index-3.html">Industria</a>
-                                <a class="dropdown-item" href="index-4.html">Clientes</a>
-                                <a class="dropdown-item" href="index-4.html">Equipo</a>
+                                <a class="dropdown-item active" href="#Pilares">Pilares</a>
+                                <a class="dropdown-item" href="#features3">Servicios</a>
+                                <a class="dropdown-item" href="#Industria">Industria</a>
+                                <a class="dropdown-item" href="#Tech">Tecnología</a>
+                                <a class="dropdown-item" href="#Clientes">Clientes</a>
+                                <a class="dropdown-item" href="#Equipo">Equipo</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="productMenu" data-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#features3" id="productMenu" data-toggle="dropdown">
                             Productos </a>
                             <div class="dropdown-menu" aria-labelledby="pageMenu">
                                 <a class="dropdown-item" href="blog.html">Apertura Remota</a>
@@ -98,7 +98,7 @@
                 </div>
             </div>
         </nav>
-        <section id="banner" class="banner bannw">
+        <section id="banner" class="banner banner12 bannw">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 wow fadeInLeft" data-wow-duration="2.5s">
@@ -111,22 +111,75 @@
                                     <a href="#"><i class="fa fa-fw fa-twitter"></i></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"><i class="fa fa-fw fa-dribbble"></i></a>
+                                    <a href="#"><i class="fa fa-fw fa-instagram"></i></a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="#"><i class="fa fa-fw fa-linkedin"></i></a>
                                 </li>
                             </ul>
                         </div>
-                        <h1>Desarrollamos soluciones de identificación digital totalmente seguras</h1>
-                        <p><p>Te ofrecemos las mejores soluciones basadas en Biometría, Inteligencia Artificial y Blockchain</p></p>
+                        <h1>Simplificamos las interacciones de la sociedad</h1>
+                        <p><p>Desarrollamos soluciones de identificación digital totalmente seguras y te ofrecemos las mejores soluciones basadas en Biometría, Inteligencia Artificial y Blockchain</p></p>
                         <div class="bnr-btn">
                             <ul class="list-inline">
                                 <li class="list-inline-item">
-                                    <a href="#">Contáctanos</a>
+                                    <a href="#contact">Contáctanos</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#">Registrate al newsletter</a>
+                                    <a id="myBtn" href="#">Registrate al newsletter</a>
+                                    <div id="myModal" class="modal">
+                                        <!-- Modal content -->
+                                        <div class="modal-content">
+                                            <div class="space" style="height: 50px"></div>
+                                            <div class="row contact-form">
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control" placeholder="Nombre">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="email" class="form-control" placeholder="E-mail">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control" placeholder="Télefono">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control" placeholder="Asunto">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <textarea class="form-control" rows="3"></textarea>
+                                                    <div class="thegncy-btn">
+                                                        <input class="contact-btn" type="submit" value="Enviar ahora">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
                                 </li>
                             </ul>
                         </div>
@@ -136,7 +189,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bnr-shape-img-2 phone"> 
+            <div class="bnr-shape-img-2 phone">
                 <img src="images/bnr-shape-2.png" alt="logo" width="810" class="imghero">
                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                 <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_mlf754me.json" background="transparent" speed="1" loop autoplay class="blob1"></lottie-player>
@@ -147,7 +200,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <div class="section-title text-center">
-                        <h1 style="color: #0883f5;">Utiliza Dicio para agilizar procesos dentro de tu organización</h1>
+                        <h1 style="color: #0883f5;">Utiliza DICIO para agilizar procesos dentro de tu organización</h1>
                         <h4><h2>Desarrollamos soluciones para agilizar procesos de identificación digital de una manera fácil y segura&nbsp;</h2></h4>
                     </div>
                     <div class="space" style="height: 40px"></div>
@@ -173,18 +226,18 @@
                 <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="2.5s">
                     <div class="service-item">
                         <i class="flaticon-phone"></i>
-                        <h5><p>Reconocimiento Óptico de Caracteres (OCR)&nbsp;</p></h5>
+                        <h5><p>OCR: Reconocimiento Óptico de Caracteres&nbsp;</p></h5>
                     </div>
                     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                 </div>
             </div>
         </div>
         <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ojqrskc0.json" background="transparent" speed="1" loop autoplay class="blob2"></lottie-player>
-        <div class="spce2"></div>
-        <div class="container">
-            <div class="row">
+        <div id="Pilares" class="spce2"></div>
+        <div class="cont12 container">
+            <div class="pilares row">
                 <div class="col-lg-6 col-sm-12 text-center wow fadeInLeft" data-wow-duration="2.5s">
-                    <img class="img-fluid img-shadow" data-tilt src="images/img-3.png" alt="img" style="width: 100%; border-radius: 70px;">
+                    <img class="img-fluid img-shadow" data-tilt src="images/img-3.svg" alt="img" style="width: 100%; border-radius: 70px;">
                 </div>
                 <div class="col-xl-5 col-lg-6 offset-xl-1 col-sm-12 wow fadeInRight" data-wow-duration="2.5s">
                     <div class="space d-none d-xl-block d-sm-block" style="height: 60px"></div>
@@ -208,7 +261,7 @@
             </div>
         </div>
         <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ojqrskc0.json" background="transparent" speed="1" loop autoplay class="blob3 w-75"></lottie-player>
-        <div class="space" style="height: 256px; margin-top: 0;"></div>
+        <div id="features3" class="space" style="height: 196px; margin-top: 0;"></div>
         <div id="features" class="container">
             <div class="row">
                 <div class="col-lg-5 fadeInLeft spacecon wow" data-wow-duration="2.5s">
@@ -226,15 +279,15 @@
                 </div>
                 <div data-tilt class="hello fadeInRight spacecon wow">
                     <iframe class="img-fluid hello2" src="https://www.youtube.com/embed/XQ7v3He994c?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <img class="img-fluid img-shadow2" src="images/img-4.png" alt="img">
+                    <img class="img-fluid img-shadow2 img-shadow3 img-shadow32" src="images/img-4.png" alt="img">
                 </div>
             </div>
         </div>
-        <div id="features" class="container">
+        <div class="container">
             <div class="row">
                 <div data-tilt class="hello3 fadeInLeft spacecon wow">
-                    <iframe class="img-fluid hello2" src="https://www.youtube.com/embed/QJKqBbkzAtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <img class="img-fluid img-shadow2" src="images/img-4.png" alt="img">
+                    <iframe class="hello2 img-fluid" src="https://www.youtube.com/embed/QJKqBbkzAtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img class="img-fluid img-shadow2 img-shadow3" src="images/img-4.png" alt="img">
                 </div>
                 <div class="col-lg-5 fadeInLeft spacecon wow" data-wow-duration="2.5s">
                     <div class="section-title">
@@ -251,7 +304,7 @@
                 </div>
             </div>
         </div>
-        <div class="space" style="height: 92px;"></div>
+        <div id="Industria" class="space" style="height: 92px;"></div>
         <section class="gradient-bg">
             <div class="space" style="height: 60px"></div>
             <div class="container">
@@ -342,8 +395,8 @@
             </div>
             <div class="space" style="height: 60px"></div>
         </section>
-        <div class="space" style="height: 100px"></div>
-        <div id="features" class="container">
+        <div id="Tech" class="space" style="height: 100px"></div>
+        <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow fadeInLeft" data-wow-duration="2.5s">
                     <div class="section-title">
@@ -394,14 +447,14 @@ facial y un score de vida de los individuos procesando esta información de mane
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6 offset-xl-1 text-center wow fadeInRight" data-wow-duration="2.5s">
-                    <img class="img-fluid img-shadow" data-tilt src="images/img-2.png" alt="img">
+                    <img class="gif img-fluid " data-tilt src="images/Comp-1_1.gif" alt="img">
                 </div>
             </div>
         </div>
         <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ojqrskc0.json" background="transparent" speed="1" loop autoplay class="blob3 w-75"></lottie-player>
         <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ojqrskc0.json" background="transparent" speed="1" loop autoplay class="blob2"></lottie-player>
-        <div class="space" style="height: 100px"></div>
-        <div id="portfolio" class="container">
+        <div id="portfolio" class="space" style="height: 100px"></div>
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title text-center">
@@ -424,8 +477,8 @@ facial y un score de vida de los individuos procesando esta información de mane
                         <img class="img-fluid" src="images/p-1.png" alt="Img">
                         <div class="single_item_content">
                             <a href="images/p-1.png"><i class="fa fa-fw fa-eye"></i></a>
-                            <span>Design</span>
-                            <h6>Rock</h6>
+                            <span>La importancia</span>
+                            <h6>de la biométria facial</h6>
                         </div>
                     </div>
                     <!-- Item -->
@@ -433,8 +486,8 @@ facial y un score de vida de los individuos procesando esta información de mane
                         <img class="img-fluid" src="images/p-2.png" alt="Img">
                         <div class="single_item_content">
                             <a href="images/p-2.png"><i class="fa fa-fw fa-eye"></i></a>
-                            <span>Web Developpmentn</span>
-                            <h6>Rock</h6>
+                            <span>Biométria</span>
+                            <h6>El presente</h6>
                         </div>
                     </div>
                     <!-- Item -->
@@ -442,8 +495,8 @@ facial y un score de vida de los individuos procesando esta información de mane
                         <img class="img-fluid" src="images/p-3.png" alt="Img">
                         <div class="single_item_content">
                             <a href="images/p-3.png"><i class="fa fa-fw fa-eye"></i></a>
-                            <span>Digital marketing</span>
-                            <h6>Rock</h6>
+                            <span>Donde aplicar</span>
+                            <h6>Biometría Facial</h6>
                         </div>
                     </div>
                     <!-- Item -->
@@ -451,8 +504,8 @@ facial y un score de vida de los individuos procesando esta información de mane
                         <img class="img-fluid" src="images/p-4.png" alt="Img">
                         <div class="single_item_content">
                             <a href="images/p-4.png"><i class="fa fa-fw fa-eye"></i></a>
-                            <span>Design</span>
-                            <h6>Rock</h6>
+                            <span>Blockchain</span>
+                            <h6>y su ayuda al sector financiero</h6>
                         </div>
                     </div>
                     <!-- Item -->
@@ -460,14 +513,14 @@ facial y un score de vida de los individuos procesando esta información de mane
                         <img class="img-fluid" src="images/p-5.png" alt="Img">
                         <div class="single_item_content">
                             <a href="images/p-5.png"><i class="fa fa-fw fa-eye"></i></a>
-                            <span>Web Developpment</span>
-                            <h6>Rock</h6>
+                            <span>Etherum</span>
+                            <h6>Y el blockchain</h6>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="space" style="height: 100px"></div>
+        <div id="clientes" class="space" style="height: 100px"></div>
         <section class="gradient-bg">
             <div class="space" style="height: 60px"></div>
             <div class="container">
@@ -475,7 +528,7 @@ facial y un score de vida de los individuos procesando esta información de mane
                     <div class="col-md-12">
                         <div class="section-title text-center white">
                             <span>Casos de Éxito</span>
-                            <h1>Nos enorgullece que nuestros clientes siempre cumplan sus metas y objetivos  en colaboración con DICIO.</h1>
+                            <h1>Nos enorgullece que nuestros clientes siempre cumplan sus metas y objetivos  en colaboración con DICIO</h1>
                             <img src="images/dot-white.png" alt="img">
                         </div>
                         <div class="space" style="height: 35px"></div>
@@ -483,12 +536,12 @@ facial y un score de vida de los individuos procesando esta información de mane
                     <div class="col-lg-8 col-sm-12">
                         <div class="testimonials">
                             <div class="testimonial-item">
-                                <p>Se implementó un proceso para sustituir la firma en papel por un proceso 100% digital, que favorece el almacenamiento y gestión de medios físicos. Garantizando validez legal.</p>
+                                <p>Se implementó un proceso para sustituir la firma en papel por un proceso 100% digital, que favorece el almacenamiento y gestión de medios físicos. Garantizando validez legal</p>
                                 <img src="assets/images/PNG/_Users_espinosa.o_Downloads_Nueva%20carpeta%20con%20elementos_MAIN_FILES_appy_assets_images_PNG_Mesa%20de%20trabajo%201@300x.png" class="lnr lnr-home text-white" width="160">
                                 <h4>CÍRCULO DE CRÉDITO</h4>
                             </div>
                             <div class="testimonial-item">
-                                <p>Agregó a su proceso existente mecanismos que le permiten mitigar el uso de credenciales apócrifas, además de poder conocer la vigencia de la credencial para votar INE.</p>
+                                <p>Agregó a su proceso existente mecanismos que le permiten mitigar el uso de credenciales apócrifas, además de poder conocer la vigencia de la credencial para votar INE</p>
                                 <img src="assets/images/PNG/_Users_espinosa.o_Downloads_Nueva%20carpeta%20con%20elementos_MAIN_FILES_appy_assets_images_PNG_credencial-logo.png" class="lnr lnr-home text-white" width="100">
                                 <h4>CREDENCIAL MÉXICO</h4>
                             </div>
@@ -498,8 +551,8 @@ facial y un score de vida de los individuos procesando esta información de mane
             </div>
             <div class="space" style="height: 60px"></div>
         </section>
-        <div class="space" style="height: 120px"></div>
-        <div class="row">
+        <div id="Equipo" class="space" style="height: 120px"></div>
+        <div class="equipo row">
             <div class="container">
                 <div class="content-head team_2 text-center">
                     <h2 class="heading--title">EQUIPO FUNDADOR</h2>
@@ -602,7 +655,8 @@ facial y un score de vida de los individuos procesando esta información de mane
             </div>
             <!-- .col-md-12 end -->
         </div>
-        <div id="contact" class="container">
+        <div id="contact" class="space" style="height: 120px"></div>
+        <div class="container">
             <div class="row">
                 <div class="wow fadeInLeft" data-wow-duration="2.5s">
                     <div class="section-title">
@@ -714,7 +768,7 @@ de tu empresa</h1>
                 </div>
             </column>
             <div class="footer-copyright">
-                <p>Copyrighs @ Bongo Beyond 2019</p>
+                <p>Copyrighs @DICIO</p>
             </div>
         </footer>
         <div id="backtotop">

@@ -5019,6 +5019,8 @@ img.mfp-img {
 
     /* fix for flashing background */
     -webkit-transform: translate3d(0px, 0px, 0px);
+    max-height: 768px;
+    min-height: 51px;
 }
 
 .owl-carousel .owl-controls .owl-nav .owl-prev,
@@ -9442,8 +9444,8 @@ IMG_BRAND {
 }
 
 .team_2 {
-    margin-top: -59px;
-    margin-bottom: 71px;
+    padding-top: 0px;
+    padding-bottom: 26px;
 }
 
 .team_img {
