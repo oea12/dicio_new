@@ -1770,7 +1770,6 @@ floating
 .site-footer {
     margin-top: 195px;
     padding-top: 190px;
-    background: url('../images/footer-shape.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12406,17 +12405,18 @@ align-content: {
 }
 
 .Foot {
-    padding-top: 90px;
-    padding-bottom: 55px;
     text-align: center;
-    display: inline-flex;
-    width: 100%;
+    display: flex;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    top: -42px;
 }
 
 .dicio {
     position: relative;
     min-height: 1px;
-    padding-left: 10%;
+    padding-left: 4%;
     width: 30%;
     font-family: 'Mulish', sans-serif;
     color: #ffffff;
@@ -12659,4 +12659,94 @@ align-content: {
         top: 69px;
         left: 298px;
     }
+}
+
+.logofoot {
+    height: 100%;
+    position: relative;
+    top: -91px;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+section .anim {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: ;
+    overflow: hidden;
+}
+
+section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-size: 1000px 100px;
+    background-image: url('../images/wave.png');
+}
+
+section .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+section .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+section .wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+section .wave.wave4 {
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -2s;
+    bottom: 20px;
+}
+
+@keyframes animate
+{
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2
+{
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+.anim {
+    position: relative;
+    top: -240px;
+}
+
+.imgfo {
+    position: relative;
+    right: 160px;
 }
