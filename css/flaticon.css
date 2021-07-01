@@ -1,68 +1,68 @@
+@charset "UTF-8";
 @font-face {
-    font-family: "flaticon";
-    src: url("./flaticon.ttf?756f84bab7adafa38608e7ea4dde74f3") format("truetype"),
-url("./flaticon.woff?756f84bab7adafa38608e7ea4dde74f3") format("woff"),
-url("./flaticon.woff2?756f84bab7adafa38608e7ea4dde74f3") format("woff2"),
-url("./flaticon.eot?756f84bab7adafa38608e7ea4dde74f3#iefix") format("embedded-opentype"),
-url("./flaticon.svg?756f84bab7adafa38608e7ea4dde74f3#flaticon") format("svg");
-}
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?1a965be7b04c01309f384d948d26e00c") format("truetype"), url("./flaticon.woff?1a965be7b04c01309f384d948d26e00c") format("woff"), url("./flaticon.woff2?1a965be7b04c01309f384d948d26e00c") format("woff2"), url("./flaticon.eot?1a965be7b04c01309f384d948d26e00c#iefix") format("embedded-opentype"), url("./flaticon.svg?1a965be7b04c01309f384d948d26e00c#flaticon") format("svg"); }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
-    font-family: flaticon !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .flaticon-sello:before {
-    content: "\f101";
-}
+  content: ""; }
+
 .flaticon-blockchain:before {
-    content: "\f102";
-}
+  content: ""; }
+
 .flaticon-reproductor-de-video:before {
-    content: "\f103";
-}
+  content: ""; }
+
 .flaticon-reconocimiento-facial:before {
-    content: "\f104";
-}
+  content: ""; }
+
 .flaticon-reconocimiento-facial-1:before {
-    content: "\f105";
-}
+  content: ""; }
+
 .flaticon-contrato:before {
-    content: "\f106";
-}
+  content: ""; }
+
 .flaticon-usuario:before {
-    content: "\f107";
-}
+  content: ""; }
+
 .flaticon-phone:before {
-    content: "\f108";
-}
+  content: ""; }
+
 .flaticon-save-money:before {
-    content: "\f109";
-}
+  content: ""; }
+
 .flaticon-embassy:before {
-    content: "\f10a";
-}
+  content: ""; }
+
 .flaticon-hospital:before {
-    content: "\f10b";
-}
+  content: ""; }
+
 .flaticon-life-insurance:before {
-    content: "\f10c";
-}
+  content: ""; }
+
 .flaticon-store:before {
-    content: "\f10d";
-}
+  content: ""; }
+
 .flaticon-delivery:before {
-    content: "\f10e";
-}
+  content: ""; }
+
 .flaticon-online-shopping:before {
-    content: "\f10f";
-}
+  content: ""; }
+
 .flaticon-earth-grid:before {
-    content: "\f110";
-}
+  content: ""; }
+
+.flaticon-banco:before {
+  content: ""; }
+
+.flaticon-arrow:before {
+  content: ""; }
