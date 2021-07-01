@@ -67,11 +67,11 @@
                             <a class="nav-link dropdown-toggle" href="#" id="homeMenu" data-toggle="dropdown">
                             Inicio </a>
                             <div class="dropdown-menu" aria-labelledby="homeMenu">
-                                <a class="dropdown-item active" href="#Pilares">Pilares</a>
+                                <a class="dropdown-item" href="#Pilares">Pilares</a>
                                 <a class="dropdown-item" href="#features3">Servicios</a>
                                 <a class="dropdown-item" href="#Industria">Industria</a>
                                 <a class="dropdown-item" href="#Tech">Tecnología</a>
-                                <a class="dropdown-item" href="#Clientes">Clientes</a>
+                                <a class="dropdown-item" href="#clientes">Clientes</a>
                                 <a class="dropdown-item" href="#Equipo">Equipo</a>
                             </div>
                         </li>
@@ -85,8 +85,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="pageMenu" data-toggle="dropdown">Blog </a>
                             <div class="dropdown-menu" aria-labelledby="pageMenu">
-                                <a class="dropdown-item" href="blog.html">Blog List</a>
-                                <a class="dropdown-item" href="single.html">Single</a>
+                                <a class="dropdown-item" href="#contact">Blog</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -130,7 +129,7 @@
                                     <a id="myBtn" href="#">Registrate al newsletter</a>
                                     <div id="myModal" class="modal">
                                         <!-- Modal content -->
-                                        <div class="modal-content">
+                                        <div id="popup" class="modal-content">
                                             <span class="close">&times;</span>
                                             <div class="row contact-form">
                                                 <div class="col-md-6">
@@ -157,19 +156,30 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
+        var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
 }
+
+
+
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+     window.onscroll=function(){};
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+       window.onscroll=function(){};
   }
 }
+ 
+
+
 </script>
                                 </li>
                             </ul>
@@ -223,14 +233,14 @@ window.onclick = function(event) {
                 </div>
                 <div class="col-lg-4 col-sm-6 fadeInUp wow zin" data-wow-duration="2.5s">
                     <div class="service-item">
-                        <i class="flaticon-phone"></i>
+                        <i class="flaticon-banco"></i>
                         <h5><p>Verificación con INE Y RENAPO</p></h5>
                     </div>
                     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                 </div>
                 <div class="col-lg-4 col-sm-6 fadeInUp wow zin" data-wow-duration="2.5s">
                     <div class="service-item">
-                        <i class="flaticon-phone"></i>
+                        <i class="flaticon-arrow"></i>
                         <h5><p>Menor costo operativo</p></h5>
                     </div>
                     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -260,7 +270,7 @@ window.onclick = function(event) {
                     </ul>
                     <div class="space" style="height: 30px"></div>
                     <div class="thegncy-btn">
-                        <a href="#">Contáctanos</a>
+                        <a href="#contact">Contáctanos</a>
                     </div>
                 </div>
             </div>
@@ -449,7 +459,7 @@ BLOCKCHAIN</h5>
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6 offset-xl-1 text-center wow fadeInRight" data-wow-duration="2.5s">
-                    <img class="gif img-fluid " data-tilt src="images/Comp-1_1.gif" alt="img">
+                    <img class="gif img-fluid " data-tilt src="images/PHONE.gif" alt="img">
                 </div>
             </div>
         </div>
@@ -553,7 +563,7 @@ BLOCKCHAIN</h5>
             </div>
             <div class="space" style="height: 60px"></div>
         </section>
-        <div id="Equipo" class="space" style="height: 120px"></div>
+        <div id="Equipo" class="space" style="height: 145px"></div>
         <div class="equipo row">
             <div class="container">
                 <div class="content-head team_2 text-center">
@@ -679,7 +689,7 @@ de tu empresa</h1>
                             <input type="text" class="form-control" placeholder="Télefono">
                         </div>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Asunto">
+                            <input type="text" class="form-control" placeholder="Empresa">
                         </div>
                         <div class="col-md-12">
                             <textarea class="form-control" rows="3"></textarea>

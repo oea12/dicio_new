@@ -39,6 +39,7 @@
 ::before {
     box-sizing: border-box;
     padding-bottom: 1px;
+    z-index: auto;
 }
 
 html {
@@ -512,6 +513,7 @@ mark {
 .img-fluid {
     max-width: 100%;
     height: auto;
+    z-index: 0;
 }
 
 .img-thumbnail {
@@ -714,6 +716,7 @@ pre code {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
+    z-index: 2;
 }
 
 .col {
@@ -5795,18 +5798,6 @@ button.close {
 .modal-open .modal {
     overflow-x: hidden;
     overflow-y: auto;
-}
-
-.modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    display: none;
-    overflow: hidden;
-    outline: 0;
 }
 
 .modal-dialog {
