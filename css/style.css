@@ -1770,7 +1770,7 @@ floating
             Footer
 *************************** */
 .site-footer {
-    margin-top: 130px;
+    margin-top: 195px;
     padding-top: 190px;
     background: url('../images/footer-shape.png');
     background-position: center;
@@ -1792,7 +1792,7 @@ floating
 .site-footer .footer-copyright {
     text-align: center;
     color: #fff;
-    padding: 25px 0 10px;
+    padding: 25px 0 20px;
 }
 
 .site-footer-2 {
