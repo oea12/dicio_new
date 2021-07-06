@@ -163,6 +163,8 @@ ul li {
 
 .section-title.white {
     color: #fff;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 .section-title.white span {
@@ -224,6 +226,7 @@ ul li {
     color: #666666;
     display: block;
     font-size: 24px;
+    margin-right: 67px;
 }
 
 .banner .bnr-social {
@@ -1768,8 +1771,8 @@ floating
             Footer
 *************************** */
 .site-footer {
-    margin-top: 195px;
-    padding-top: 190px;
+    margin-top: 131px;
+    padding-top: 251px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12685,6 +12688,7 @@ section .wave {
     height: 100px;
     background-size: 1000px 100px;
     background-image: url('../images/wave.png');
+    margin-top: -;
 }
 
 section .wave.wave1 {
@@ -12744,9 +12748,15 @@ section .wave.wave4 {
 .anim {
     position: relative;
     top: -240px;
+    margin-bottom: -120px;
 }
 
 .imgfo {
     position: relative;
     right: 160px;
+}
+
+.texti {
+    margin-left: 84px;
+    margin-right: 40px;
 }
