@@ -84,6 +84,7 @@ ul li {
 .img-shadow {
     -webkit-box-shadow: 0px 30px 64px 16px rgba(129, 116, 254, 0.15);
     box-shadow: 0px 30px 64px 16px rgba(77, 77, 77, 0.28);
+    z-index: -2;
 }
 
 .awards {
@@ -162,6 +163,8 @@ ul li {
 
 .section-title.white {
     color: #fff;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 .section-title.white span {
@@ -202,16 +205,14 @@ ul li {
 }
 
 .banner .bnr-shape-img-2 {
-    position: absolute;
-    width: 55%;
-    height: 51%;
-    top: 0;
-    right: 0;
+    position: relative;
+    width: 42%;
+    height: 71%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 0px;
-    margin-top: 183px;
-    padding-left: 0px;
+    display: inline;
+    left: 364px;
+    top: -1599px;
 }
 
 .banner h1 {
@@ -225,6 +226,7 @@ ul li {
     color: #666666;
     display: block;
     font-size: 24px;
+    margin-right: 67px;
 }
 
 .banner .bnr-social {
@@ -852,7 +854,7 @@ floating
 .feature-item-content h5 {
     padding-top: 0;
     margin-top: 0;
-    display: inline-block;
+    display: inline;
 }
 
 .feature-item:hover i {
@@ -1189,6 +1191,7 @@ floating
 
 .isotope_items {
     width: 100%;
+    margin: 0 auto;
 }
 
 .single_item {
@@ -1489,6 +1492,7 @@ floating
     color: #fff;
     text-align: center;
     margin-bottom: 35px;
+    display: block;
 }
 
 .testimonial-item p {
@@ -1769,9 +1773,8 @@ floating
             Footer
 *************************** */
 .site-footer {
-    margin-top: 130px;
-    padding-top: 190px;
-    background: url('../images/footer-shape.png');
+    margin-top: 131px;
+    padding-top: 251px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1791,7 +1794,7 @@ floating
 .site-footer .footer-copyright {
     text-align: center;
     color: #fff;
-    padding: 25px 0 10px;
+    padding: 25px 0 20px;
 }
 
 .site-footer-2 {
@@ -2366,8 +2369,7 @@ floating
 
 .team-overlay h4 {
     color: #FFF;
-    font-size: 15px;
-    line-height: 19px;
+    font-size: 5px;
     font-weight: 400;
     margin: 0px 0px 35px;
     transform: scale(1.1);
@@ -2445,7 +2447,7 @@ floating
 
 .team-overlay-inner {
     position: absolute;
-    bottom: 46px;
+    bottom: 80px;
     left: 0px;
     right: 0px;
     width: 100%;
@@ -2526,14 +2528,14 @@ floating
 
 .team-overlay h4 {
     color: #FFF;
-    font-size: 15px;
-    line-height: 19px;
     font-weight: 400;
-    margin: 0px 0px 35px;
     transform: scale(1.1);
     letter-spacing: 0.5em;
     transition: 0.4s;
     opacity: 0;
+    padding-top: 0px;
+    margin: 16px 0px 114px;
+    font-family: 'Mulish', sans-serif;
 }
 
 .team-overlay h4 span {
@@ -2607,11 +2609,11 @@ floating
 }
 
 .team-overlay-inner {
-    position: fixed;
+    position: static;
     left: 0px;
     right: 0px;
     width: 100%;
-    padding: 0px 40px;
+    padding: 50% 20px 0px;
 }
 
 .carousel-dots .owl-controls {
@@ -7727,18 +7729,11 @@ img.mfp-img {
 /* *  Core Owl Carousel CSS File */
 .owl-carousel {
     display: none;
-    width: 100%;
     -webkit-tap-highlight-color: transparent;
 
     /* position relative and z-index fix webkit rendering fonts issue */
     position: relative;
     z-index: 1;
-    height: 588px;
-    margin-top: -;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-bottom: 45px;
-    top: -;
 }
 
 .owl-carousel .owl-stage {
@@ -7776,7 +7771,8 @@ img.mfp-img {
 }
 
 .owl-carousel.owl-loaded {
-    display: flex;
+    display: inline;
+    height: 100%;
 }
 
 .owl-carousel.owl-loading {
@@ -7786,6 +7782,7 @@ img.mfp-img {
 
 .owl-carousel.owl-hidden {
     opacity: 0;
+    height: 100%;
 }
 
 .owl-carousel .owl-refresh .owl-item {
@@ -11533,15 +11530,6 @@ Copyright (c) 2015 Daniel Eden
     top: -17px;
 }
 
-.feature--new {
-    top: 0px;
-    padding-bottom: 0px;
-    margin-top: 32px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    width: 100%;
-}
-
 .feature-panel_new {
 }
 
@@ -12189,12 +12177,17 @@ IMG_BRAND {
 
 .team_img {
     padding-top: 40px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1px;
 }
 
 .team_img {
 }
 
 .team_img {
+}
+
+align-content: {
 }
 
 .team_img {
@@ -12302,15 +12295,12 @@ IMG_BRAND {
 }
 
 .blob1 {
-    width: 761px;
-    height: 1000px;
+    height: 857px;
     z-index: -10;
     position: relative;
     margin-bottom: 0;
     margin-left: 0px;
-    left: 181px;
-    display: inline;
-    top: -927px;
+    top: -;
 }
 
 .blob2 {
@@ -12337,10 +12327,10 @@ IMG_BRAND {
 .imghero {
     z-index: -1;
     position: relative;
-    left: 110px;
     display: inline-table;
     vertical-align: inherit;
-    top: -61px;
+    top: 860px;
+    left: 162px;
 }
 
 .spacecon {
@@ -12349,7 +12339,7 @@ IMG_BRAND {
 
 .col-xs-12 {
     padding-bottom: 0px;
-    height: 644px;
+    height: 100%;
 }
 
 .newclass {
@@ -12357,7 +12347,7 @@ IMG_BRAND {
 }
 
 .center-block {
-    display: inline-flex;
+    display: inline;
 }
 
 .hello {
@@ -12396,6 +12386,7 @@ IMG_BRAND {
 }
 
 .feature--icon {
+    width: 100%;
 }
 
 .icons {
@@ -12411,35 +12402,33 @@ IMG_BRAND {
 }
 
 .Foot {
-    padding-top: 90px;
-    padding-bottom: 55px;
     text-align: center;
-    display: inline-flex;
     width: 100%;
+    position: relative;
+    vertical-align: middle;
 }
 
 .dicio {
     position: relative;
-    min-height: 1px;
-    padding-left: 10%;
-    width: 30%;
     font-family: 'Mulish', sans-serif;
     color: #ffffff;
-    font-size: 19px;
-    line-height: 40px;
-    text-align: left;
+    font-size: 26px;
+    line-height: 51px;
+    text-align: center;
     font-weight: 700;
-}
-
-.dicio {
-}
-
-.dicio {
+    vertical-align: middle;
+    width: 225px;
+    margin: 0 auto;
 }
 
 .footer {
     color: #ffffff;
     font-family: 'Mulish', sans-serif;
+    position: center;
+    display: inline;
+    width: 154%;
+    text-align: center;
+    margin-bottom: 35px;
 }
 
 .redes {
@@ -12457,6 +12446,7 @@ IMG_BRAND {
 
 .gif {
     padding-top: 101px;
+    box-shadow: 0px 0px;
 }
 
 .modal {
@@ -12469,6 +12459,7 @@ IMG_BRAND {
     width: 100%;
     height: 100%;
     background-color: rgba(81, 81, 81, 0.49);
+    overflow-y: hidden;
 }
 
 /* Modal Content */
@@ -12476,11 +12467,10 @@ IMG_BRAND {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
-    border: 4px solid #888;
     width: 40%;
-    z-index: 30;
     overflow: hidden;
     display: flex;
+    border: 12px solid #888;
 }
 
 /* The Close Button */
@@ -12550,4 +12540,277 @@ IMG_BRAND {
 
 .zin {
     z-index: -3;
+}
+
+@media screen and (min-width:2864px) {
+    .4k {
+        position: relative;
+        bottom: -96px;
+    }
+
+    .4k {
+        position: fixed;
+        left: 1202px;
+        top: -466px;
+    }
+
+    .4k {
+        width: -1px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .img1200 {
+        width: 57%;
+        position: relative;
+        top: 957px;
+    }
+
+    .blob1200 {
+        height: 565px;
+        position: relative;
+        top: 408px;
+        left: 181px;
+        width: 498px;
+    }
+}
+
+@media screen and (min-width:2864px) {
+    .blob4k2 {
+        height: 2136px;
+        z-index: -14;
+        left: -1756px;
+        top: 1550px;
+        position: absolute;
+        margin-bottom: -1337px;
+        display: inline;
+        float: left;
+    }
+
+    .blob34k {
+        left: 2884px;
+        z-index: -16;
+        display: inline;
+        overflow: scroll;
+        position: absolute;
+        margin-top: -290px;
+        top: 3000px;
+        height: 1677px;
+    }
+
+    .blob34k6 {
+        left: 2884px;
+        z-index: -16;
+        display: inline;
+        overflow: scroll;
+        position: absolute;
+        margin-top: -290px;
+        top: 6000px;
+        height: 1677px;
+    }
+
+    .owl-carousel4k {
+        display: none;
+        -webkit-tap-highlight-color: transparent;
+
+        /* position relative and z-index fix webkit rendering fonts issue */
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.screenshot {
+}
+
+@media screen and (max-width:1199px) {
+    .hello12 {
+        height: 238px;
+        position: relative;
+        top: 124px;
+    }
+
+    .hello123 {
+        height: 238px;
+        position: relative;
+        top: 180px;
+    }
+}
+
+.hello92 {
+}
+
+@media screen and (max-width:991px) {
+    .hello92 {
+        width: 100%;
+        position: relative;
+        top: 69px;
+        left: 168px;
+    }
+
+    .hello923 {
+        width: 100%;
+        position: relative;
+        top: 69px;
+        left: 298px;
+    }
+}
+
+.logofoot {
+    height: 100%;
+    position: relative;
+    top: -91px;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+section .anim {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: ;
+    overflow: hidden;
+}
+
+section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-size: 1000px 100px;
+    background-image: url('../images/wave.png');
+    margin-top: -;
+}
+
+section .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+section .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+section .wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+section .wave.wave4 {
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -2s;
+    bottom: 20px;
+}
+
+@keyframes animate
+{
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2
+{
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+.anim {
+    position: relative;
+    top: -240px;
+    margin-bottom: -120px;
+}
+
+.imgfo {
+    position: relative;
+    right: 160px;
+}
+
+.texti {
+    margin-left: 84px;
+    margin-right: 40px;
+    text-align: justify;
+}
+
+.section-title {
+    margin-right: 124px;
+}
+
+.testimonials {
+    width: 117%;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 43px;
+    margin: 0 auto 0 -60px;
+}
+
+.truck {
+    font-size: 63px;
+}
+
+.diciofoot {
+    display: flex;
+    text-align: center;
+    margin-bottom: 96px;
+    position: center;
+}
+
+.newdiv {
+    margin-left: 35%;
+    width: 626px;
+    margin-right: 50%;
+    position: center;
+}
+
+.footer2 {
+    display: inline;
+    margin-left: 52px;
+    margin-right: 52px;
+    font-size: 25px;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: -;
+}
+
+.address-holder {
+    height: 46px;
+}
+
+.dicio2 {
+    margin: 0 auto;
+}
+
+.textfoot {
+    font-family: 'Mulish', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.testimonials2 {
+}
+
+.news {
+    color: #3796f8;
+    margin-top: 15px;
 }

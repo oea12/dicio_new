@@ -12467,10 +12467,11 @@ align-content: {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
-    border: 4px solid #888;
     width: 40%;
     overflow: hidden;
     display: flex;
+    border: 7px solid #888;
+    border-radius: 9px;
 }
 
 /* The Close Button */
@@ -12808,4 +12809,9 @@ section .wave.wave4 {
 }
 
 .testimonials2 {
+}
+
+.news {
+    color: #3796f8;
+    margin-top: 15px;
 }
