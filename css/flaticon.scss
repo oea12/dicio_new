@@ -2,14 +2,15 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?1a965be7b04c01309f384d948d26e00c") format("truetype"),
-url("./flaticon.woff?1a965be7b04c01309f384d948d26e00c") format("woff"),
-url("./flaticon.woff2?1a965be7b04c01309f384d948d26e00c") format("woff2"),
-url("./flaticon.eot?1a965be7b04c01309f384d948d26e00c#iefix") format("embedded-opentype"),
-url("./flaticon.svg?1a965be7b04c01309f384d948d26e00c#flaticon") format("svg");
+    src: url("./flaticon.ttf?9d492378adbcfa235b2fffe20fd83932") format("truetype"),
+url("./flaticon.woff?9d492378adbcfa235b2fffe20fd83932") format("woff"),
+url("./flaticon.woff2?9d492378adbcfa235b2fffe20fd83932") format("woff2"),
+url("./flaticon.eot?9d492378adbcfa235b2fffe20fd83932#iefix") format("embedded-opentype"),
+url("./flaticon.svg?9d492378adbcfa235b2fffe20fd83932#flaticon") format("svg");
 }
 
-i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+i[class^="flaticon-"]:before,
+i[class*=" flaticon-"]:before {
     font-family: flaticon !important;
     font-style: normal;
     font-weight: normal !important;
@@ -39,59 +40,81 @@ $flaticon-map: (
     "earth-grid": "\f110",
     "banco": "\f111",
     "arrow": "\f112",
+    "delivery-truck": "\f113",
 );
 
 .flaticon-sello:before {
     content: map-get($flaticon-map, "sello");
 }
+
 .flaticon-blockchain:before {
     content: map-get($flaticon-map, "blockchain");
 }
+
 .flaticon-reproductor-de-video:before {
     content: map-get($flaticon-map, "reproductor-de-video");
 }
+
 .flaticon-reconocimiento-facial:before {
     content: map-get($flaticon-map, "reconocimiento-facial");
 }
+
 .flaticon-reconocimiento-facial-1:before {
     content: map-get($flaticon-map, "reconocimiento-facial-1");
 }
+
 .flaticon-contrato:before {
     content: map-get($flaticon-map, "contrato");
 }
+
 .flaticon-usuario:before {
     content: map-get($flaticon-map, "usuario");
 }
+
 .flaticon-phone:before {
     content: map-get($flaticon-map, "phone");
 }
+
 .flaticon-save-money:before {
     content: map-get($flaticon-map, "save-money");
 }
+
 .flaticon-embassy:before {
     content: map-get($flaticon-map, "embassy");
 }
+
 .flaticon-hospital:before {
     content: map-get($flaticon-map, "hospital");
 }
+
 .flaticon-life-insurance:before {
     content: map-get($flaticon-map, "life-insurance");
 }
+
 .flaticon-store:before {
     content: map-get($flaticon-map, "store");
 }
+
 .flaticon-delivery:before {
     content: map-get($flaticon-map, "delivery");
 }
+
 .flaticon-online-shopping:before {
     content: map-get($flaticon-map, "online-shopping");
 }
+
 .flaticon-earth-grid:before {
     content: map-get($flaticon-map, "earth-grid");
 }
+
 .flaticon-banco:before {
     content: map-get($flaticon-map, "banco");
 }
+
 .flaticon-arrow:before {
     content: map-get($flaticon-map, "arrow");
+}
+
+.flaticon-delivery-truck:before {
+    content: map-get($flaticon-map, "delivery-truck");
 }

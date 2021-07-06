@@ -40,6 +40,7 @@
     box-sizing: border-box;
     padding-bottom: 1px;
     z-index: auto;
+    margin-left: 0px;
 }
 
 html {
@@ -179,6 +180,7 @@ a {
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
+    text-align: center;
 }
 
 a:hover {

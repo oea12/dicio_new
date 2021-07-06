@@ -854,7 +854,7 @@ floating
 .feature-item-content h5 {
     padding-top: 0;
     margin-top: 0;
-    display: inline-block;
+    display: inline;
 }
 
 .feature-item:hover i {
@@ -1191,6 +1191,7 @@ floating
 
 .isotope_items {
     width: 100%;
+    margin: 0 auto;
 }
 
 .single_item {
@@ -1491,6 +1492,7 @@ floating
     color: #fff;
     text-align: center;
     margin-bottom: 35px;
+    display: block;
 }
 
 .testimonial-item p {
@@ -11528,15 +11530,6 @@ Copyright (c) 2015 Daniel Eden
     top: -17px;
 }
 
-.feature--new {
-    top: 0px;
-    padding-bottom: 0px;
-    margin-top: 32px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    width: 100%;
-}
-
 .feature-panel_new {
 }
 
@@ -12393,6 +12386,7 @@ align-content: {
 }
 
 .feature--icon {
+    width: 100%;
 }
 
 .icons {
@@ -12409,35 +12403,32 @@ align-content: {
 
 .Foot {
     text-align: center;
-    display: flex;
-    width: 90%;
+    width: 100%;
     position: relative;
-    left: 5%;
-    top: -42px;
+    vertical-align: middle;
 }
 
 .dicio {
     position: relative;
-    min-height: 1px;
-    padding-left: 4%;
-    width: 30%;
     font-family: 'Mulish', sans-serif;
     color: #ffffff;
-    font-size: 19px;
-    line-height: 40px;
-    text-align: left;
+    font-size: 26px;
+    line-height: 51px;
+    text-align: center;
     font-weight: 700;
-}
-
-.dicio {
-}
-
-.dicio {
+    vertical-align: middle;
+    width: 225px;
+    margin: 0 auto;
 }
 
 .footer {
     color: #ffffff;
     font-family: 'Mulish', sans-serif;
+    position: center;
+    display: inline;
+    width: 154%;
+    text-align: center;
+    margin-bottom: 35px;
 }
 
 .redes {
@@ -12759,4 +12750,62 @@ section .wave.wave4 {
 .texti {
     margin-left: 84px;
     margin-right: 40px;
+    text-align: justify;
+}
+
+.section-title {
+    margin-right: 124px;
+}
+
+.testimonials {
+    width: 117%;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 43px;
+    margin: 0 auto 0 -60px;
+}
+
+.truck {
+    font-size: 63px;
+}
+
+.diciofoot {
+    display: flex;
+    text-align: center;
+    margin-bottom: 96px;
+    position: center;
+}
+
+.newdiv {
+    margin-left: 35%;
+    width: 626px;
+    margin-right: 50%;
+    position: center;
+}
+
+.footer2 {
+    display: inline;
+    margin-left: 52px;
+    margin-right: 52px;
+    font-size: 25px;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: -;
+}
+
+.address-holder {
+    height: 46px;
+}
+
+.dicio2 {
+    margin: 0 auto;
+}
+
+.textfoot {
+    font-family: 'Mulish', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.testimonials2 {
 }

@@ -4216,8 +4216,6 @@ img.mfp-img {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin-top: -3px;
-    margin-bottom: 38px;
 }
 
 .lnr-home:before {
@@ -8800,8 +8798,10 @@ Copyright (c) 2015 Daniel Eden
 .feature--new {
     top: 0px;
     padding-bottom: 0px;
+    margin-top: 32px;
+    margin-left: 0px;
+    margin-bottom: 0px;
     width: 100%;
-    margin: 32px;
 }
 
 .feature-panel_new {
