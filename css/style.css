@@ -7728,7 +7728,7 @@ img.mfp-img {
 
 /* *  Core Owl Carousel CSS File */
 .owl-carousel {
-    display: none;
+    display: inline;
     -webkit-tap-highlight-color: transparent;
 
     /* position relative and z-index fix webkit rendering fonts issue */
@@ -7771,7 +7771,6 @@ img.mfp-img {
 }
 
 .owl-carousel.owl-loaded {
-    display: inline;
     height: 100%;
 }
 
@@ -7781,7 +7780,6 @@ img.mfp-img {
 }
 
 .owl-carousel.owl-hidden {
-    opacity: 0;
     height: 100%;
 }
 
@@ -12814,4 +12812,7 @@ section .wave.wave4 {
 .news {
     color: #3796f8;
     margin-top: 15px;
+}
+
+.feature--content {
 }

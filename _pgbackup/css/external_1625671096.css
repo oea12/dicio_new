@@ -5048,6 +5048,7 @@ img.mfp-img {
 
 .owl-carousel.owl-hidden {
     opacity: 0;
+    height: 139px;
 }
 
 .owl-carousel .owl-refresh .owl-item {
