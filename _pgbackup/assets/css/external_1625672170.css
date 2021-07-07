@@ -4216,8 +4216,6 @@ img.mfp-img {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin-top: -3px;
-    margin-bottom: 38px;
 }
 
 .lnr-home:before {
@@ -4993,12 +4991,13 @@ img.mfp-img {
 
 /* *  Core Owl Carousel CSS File */
 .owl-carousel {
+    display: none;
+    width: 100%;
     -webkit-tap-highlight-color: transparent;
 
     /* position relative and z-index fix webkit rendering fonts issue */
     position: relative;
     z-index: 1;
-    height: 100%;
 }
 
 .owl-carousel .owl-stage {
@@ -5021,8 +5020,6 @@ img.mfp-img {
 
     /* fix for flashing background */
     -webkit-transform: translate3d(0px, 0px, 0px);
-    max-height: 768px;
-    min-height: 51px;
 }
 
 .owl-carousel .owl-controls .owl-nav .owl-prev,
@@ -5038,7 +5035,7 @@ img.mfp-img {
 }
 
 .owl-carousel.owl-loaded {
-    height: 100%;
+    display: block;
 }
 
 .owl-carousel.owl-loading {
@@ -6639,7 +6636,6 @@ Copyright (c) 2015 Daniel Eden
 .fadeInUp {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    z-index: 5;
 }
 
 @-webkit-keyframes fadeInUpBig{
@@ -8799,8 +8795,10 @@ Copyright (c) 2015 Daniel Eden
 .feature--new {
     top: 0px;
     padding-bottom: 0px;
+    margin-top: 32px;
+    margin-left: 0px;
+    margin-bottom: 0px;
     width: 100%;
-    margin: 32px;
 }
 
 .feature-panel_new {
@@ -9325,8 +9323,6 @@ IMG_BRAND {
     text-align: left;
     width: 100%;
     padding-right: 42px;
-    font-family: 'Mulish', sans-serif;
-    color: #6c6c6c;
 }
 
 @media (max-width:479px) {
@@ -9440,8 +9436,6 @@ IMG_BRAND {
 .newsect {
     margin-top: -101px;
     padding-bottom: 125px;
-    font-family: 'Mulish', sans-serif;
-    color: #6f6f6f;
 }
 
 .DIV_4 {
@@ -9449,8 +9443,11 @@ IMG_BRAND {
 }
 
 .team_2 {
-    padding-top: 0px;
-    padding-bottom: 26px;
+    margin-top: -43px;
+}
+
+.team_img {
+    padding-top: 40px;
 }
 
 .team_img {
@@ -9466,8 +9463,30 @@ IMG_BRAND {
 }
 
 .team_img {
-    font-family: 'Mulish', sans-serif;
-    font-size: 6px;
+}
+
+.team_img {
+}
+
+.team_img {
+}
+
+.team_img {
+}
+
+.team_img {
+}
+
+.team_img {
+}
+
+.team_img {
+}
+
+.team_img {
+}
+
+.team_img {
 }
 
 .cta_sect {
@@ -9489,9 +9508,6 @@ IMG_BRAND {
 
 .iframe_phone {
     border: 0;
-    border-radius: 21px;
-    width: 100%;
-    height: 100%;
 }
 
 .section_slider {
@@ -9512,9 +9528,8 @@ IMG_BRAND {
 }
 
 .class_term {
-    height: 321px;
+    height: 473px;
     width: 100%;
-    margin-top: 1px;
 }
 
 .container_terms {
@@ -9529,6 +9544,6 @@ IMG_BRAND {
 
 .container_terms {
     width: 80%;
-    margin: 0 auto;
+    margin-left: 10%;
     height: 100%;
 }
