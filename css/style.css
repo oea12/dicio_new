@@ -12809,6 +12809,7 @@ section .wave.wave4 {
     font-family: 'Mulish', sans-serif;
     font-size: 15px;
     color: #ffffff;
+    margin: auto 30px;
 }
 
 .testimonials2 {
@@ -12985,5 +12986,11 @@ section .wave.wave4 {
 
     p {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .hello2 {
+        border-radius: 4px;
     }
 }
