@@ -224,7 +224,7 @@ figure {
 
 img {
     border-style: none;
-    z-index: 0;
+    z-index: 2;
 }
 
 svg {
