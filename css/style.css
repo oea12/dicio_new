@@ -164,7 +164,7 @@ ul li {
 
 .section-title.white {
     color: #fff;
-    margin: 75px auto auto;
+    margin: 54px auto auto;
 }
 
 .section-title.white span {
@@ -12750,8 +12750,8 @@ section .wave.wave4 {
 }
 
 .texti {
-    margin-left: 84px;
-    margin-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: justify;
 }
 
@@ -12905,5 +12905,52 @@ section .wave.wave4 {
     .footersm {
         font-size: 14px;
         margin: auto 10px;
+    }
+}
+
+@media screen and (max-width:499px) {
+    .contact-form {
+        margin: 10%;
+    }
+
+    .textism {
+        margin: 10%;
+        font-size: 12px;
+    }
+}
+
+.texti {
+}
+
+.textism {
+}
+
+@media screen and (max-width:499px) {
+    .section-title h1 {
+        font-size: 23px;
+    }
+
+    .imgsvg {
+        width: 95%;
+    }
+}
+
+.imgsvg {
+}
+
+@media screen and (max-width:499px) {
+    .btmagncysm {
+        text-align: center;
+    }
+
+    .h2 {
+        font-size: 21px;
+    }
+
+    .spacesm {
+        height: 89px;
+    }
+
+    .feat {
     }
 }
