@@ -13000,3 +13000,8 @@ section .wave.wave4 {
         height: 38px;
     }
 }
+
+.team-social {
+    margin: auto;
+    text-align: center;
+}
