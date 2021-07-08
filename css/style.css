@@ -11527,8 +11527,8 @@ Copyright (c) 2015 Daniel Eden
     font-family: 'Mulish', sans-serif;
     color: #ffffff;
     font-weight: 700;
-    font-size: 15px;
     top: -17px;
+    font-size: 15px;
 }
 
 .feature-panel_new {
@@ -12745,8 +12745,10 @@ section .wave.wave4 {
 }
 
 .imgfo {
+    margin: auto;
+    padding: auto;
     position: relative;
-    right: 160px;
+    left: -158px;
 }
 
 .texti {
@@ -12846,10 +12848,10 @@ section .wave.wave4 {
     }
 
     .but {
-        margin: auto;
-        padding: auto;
         position: center;
         text-align: center;
+        padding: 0px 0px 0px 5px;
+        margin: auto;
     }
 }
 
@@ -12927,7 +12929,8 @@ section .wave.wave4 {
 
 @media screen and (max-width:499px) {
     .section-title h1 {
-        font-size: 23px;
+        font-size: 24px;
+        margin: 10px;
     }
 
     .imgsvg {
@@ -12952,5 +12955,35 @@ section .wave.wave4 {
     }
 
     .feat {
+    }
+
+    .featuresm {
+    }
+}
+
+@media screen and (max-width:413px) {
+    .iconssm {
+        font-size: 1px;
+    }
+
+    .new_class {
+        font-family: 'Mulish', sans-serif;
+        font-size: 12px;
+    }
+
+    .feature--content {
+        width: 100%;
+        margin: auto;
+        line-height: 14px;
+    }
+
+    .section-title > span {
+        font-size: 16px;
+        margin: auto;
+        text-align: center;
+    }
+
+    p {
+        font-size: 14px;
     }
 }
