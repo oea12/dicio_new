@@ -12294,6 +12294,21 @@ align-content: {
     margin-left: 124px;
     width: 100%;
 }
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ @media {
+
+  .blob1 {
+      height: 857px;
+      z-index: -10;
+      position: relative;
+      margin-bottom: 0;
+      margin-left: 0px;
+      top: -;
+      display: none;
+
+
+  }
+}}
 
 .blob1 {
     height: 857px;
@@ -12302,6 +12317,8 @@ align-content: {
     margin-bottom: 0;
     margin-left: 0px;
     top: -;
+
+
 }
 
 .blob2 {
@@ -12838,7 +12855,9 @@ section .wave.wave4 {
 
 @media screen and (max-width:1023px) {
     .wowhead {
-        margin: -194px auto auto;
+        margin-top: -194px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -13004,4 +13023,9 @@ section .wave.wave4 {
 .team-social {
     margin: auto;
     text-align: center;
+}
+
+@media screen and (max-width:1199px) {
+    .wowhead {
+    }
 }
