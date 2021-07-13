@@ -10,8 +10,6 @@ let mensajeValidarMail = "Emails with domian hotmail.com, gmail.com, outlook.com
 const handleSubmitMail = (event) => {
     event.preventDefault();
     let email = document.getElementById('email');
-    let correo = document.getElementById('correo');
-    let name = document.getElementById('name');
 
     if (/@hotmail.com\s*$/.test(email.value.toLowerCase()) || /@gmail.com\s*$/.test(email.value.toLowerCase()) || /@outlook.com\s*$/.test(email.value.toLowerCase()) || /@yahoo.com\s*$/.test(email.value.toLowerCase())) {
         let alertError = document.getElementById('mail_fail_email');
@@ -19,14 +17,36 @@ const handleSubmitMail = (event) => {
         alertError.innerHTML = mensajeValidarMail;
         setTimeout(function () { alertError.style.display = "none"; }, 3000);
     } else {
+        let data = [
+            {
+                "name": "email",
+                "value": email.value
+            },
+        ];
 
-        correo.value = email.value;
-        setTimeout(() => {
-            let x = window.scrollX, y = window.scrollY;
-            window.scrollTo(x, y);
-            name.focus();
-        }, 1000);
-        
+        let json_value = {
+            "fields": data,
+            "skipValidation": false
+        };
+
+        $.ajax({
+            url: 'https://api.hsforms.com/submissions/v3/integration/submit/6719688/b60a7d63-ceeb-42e3-ae87-c81eefde43af',
+            type: 'post',
+            dataType: 'json',
+            contentType: 'application/json',
+            data: JSON.stringify(json_value),
+            success: function (response) {
+                document.getElementById('formEmail').reset();
+                let alertSucces = document.getElementById('mail_success_email');
+                alertSucces.style.display = "block";
+                setTimeout(function () { alertSucces.style.display = "none"; }, 3000);
+            },
+            error: function (response) {
+                let alertError = document.getElementById('mail_fail_email');
+                alertError.style.display = "block";
+                setTimeout(function () { alertError.style.display = "none"; }, 3000);
+            }
+        });
     }
 
 }
