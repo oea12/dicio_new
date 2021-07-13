@@ -10336,3 +10336,39 @@ finaltext {
 
 .newsub_final {
 }
+
+/* Safari 10.1+ */
+@media not all and (min-resolution:.001dpcm) {
+   .blob1 {
+
+     height: 857px;
+     z-index: -10;
+     position: relative;
+     margin-bottom: 0;
+     margin-left: 0px;
+     top: -;
+     display: none;
+     background-image: url('../images/img-5.svg');
+   }
+   .blob2 {
+       width: 82%;
+       height: 79%;
+       z-index: -14;
+       left: -1044px;
+       top: 1375px;
+       position: absolute;
+       margin-bottom: -1337px;
+       display: none;
+       float: left;
+   }
+
+   .blob3 {
+       left: 1768px;
+       z-index: -16;
+       display: none;
+       overflow: scroll;
+       position: absolute;
+       margin-top: -290px;
+   }
+
+}

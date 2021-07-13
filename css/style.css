@@ -12294,21 +12294,62 @@ align-content: {
     margin-left: 124px;
     width: 100%;
 }
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
-{ @media {
 
-  .blob1 {
-      height: 857px;
-      z-index: -10;
-      position: relative;
-      margin-bottom: 0;
-      margin-left: 0px;
-      top: -;
-      display: none;
+/* Safari 10.1+ */
+@media not all and (min-resolution:.001dpcm) {
+    .blob1 {
+        height: 857px;
+        z-index: -10;
+        position: relative;
+        margin-bottom: 0;
+        margin-left: 0px;
+        top: -;
+        display: none;
+        background-image: url('../images/img-5.svg');
+    }
 
+    .blob3 {
+        left: 1768px;
+        z-index: -16;
+        display: none;
+        overflow: scroll;
+        position: absolute;
+        margin-top: -290px;
+    }
 
-  }
-}}
+    .blob4k2 {
+        height: 2136px;
+        z-index: -14;
+        left: -1756px;
+        top: 1550px;
+        position: absolute;
+        margin-bottom: -1337px;
+        display: none;
+        float: left;
+    }
+
+    .blob34k {
+        left: 2884px;
+        z-index: -16;
+        display: none;
+        overflow: scroll;
+        position: absolute;
+        margin-top: -290px;
+        top: 3000px;
+        height: 1677px;
+    }
+
+    .blob34k6 {
+        left: 2884px;
+        z-index: -16;
+        display: none;
+        overflow: scroll;
+        position: absolute;
+        margin-top: -290px;
+        top: 6000px;
+        height: 1677px;
+    }
+}
 
 .blob1 {
     height: 857px;
@@ -12317,7 +12358,6 @@ align-content: {
     margin-bottom: 0;
     margin-left: 0px;
     top: -;
-
 
 }
 
@@ -12602,14 +12642,12 @@ align-content: {
         top: 1550px;
         position: absolute;
         margin-bottom: -1337px;
-        display: inline;
         float: left;
     }
 
     .blob34k {
         left: 2884px;
         z-index: -16;
-        display: inline;
         overflow: scroll;
         position: absolute;
         margin-top: -290px;
@@ -12620,7 +12658,6 @@ align-content: {
     .blob34k6 {
         left: 2884px;
         z-index: -16;
-        display: inline;
         overflow: scroll;
         position: absolute;
         margin-top: -290px;
