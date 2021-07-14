@@ -13065,3 +13065,17 @@ section .wave.wave4 {
     .wowhead {
     }
 }
+
+.success {
+    clear: both;
+    display: none;
+    color: #96c346;
+    padding-bottom: 20px;
+}
+
+.error {
+    clear: both;
+    display: none;
+    color: #e7505a;
+    padding-bottom: 20px;
+}

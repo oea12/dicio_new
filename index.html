@@ -26,6 +26,7 @@
         <link rel="stylesheet" href="js/vendors/owl-carousel/owl.transitions.css">
         <link rel="stylesheet" href="css/morris.css">
         <link rel="stylesheet" href="css/jquery.jqplot.css">
+        <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
         <title>DICIO - Tan Único Como Tú</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish&display=swap">
     </head>
@@ -131,6 +132,10 @@
                                                     <h2 class="news">
                                                     Registra tu mail para darte más información. </h2>
                                                     <input id="email" type="email" class="form-control" placeholder="E-mail">
+                                                </div>
+                                                <div class="col-12">
+                                                    <span id="mail_success_email" class="success">Tu información fue enviada exitosamente.</span>
+                                                    <span id="mail_fail_email" class="error">Ocurrio un error al enviar la información.</span>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="thegncy-btn">
@@ -628,8 +633,11 @@
                         <div class="col-md-6">
                             <input type="text" class="form-control" placeholder="Empresa" name="company" id="company">
                         </div>
+                        
                         <div class="col-md-12">
                             <textarea class="form-control" rows="3" name="message" id="message"></textarea>
+                            <span id="mail_success_contact" class="success">Tu información fue enviada exitosamente.</span>
+                            <span id="mail_fail_contact" class="error">Ocurrio un error al enviar la información.</span>
                             <div class="thegncy-btn" id="submit">
                                 <input class="contact-btn" type="submit" value="Enviar ahora" id="send_message">
                             </div>

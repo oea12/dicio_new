@@ -15,7 +15,7 @@ const handleSubmitMail = (event) => {
         let alertError = document.getElementById('mail_fail_email');
         alertError.style.display = "block";
         alertError.innerHTML = mensajeValidarMail;
-        setTimeout(function () { alertError.style.display = "none"; }, 3000);
+        setTimeout(function () { alertError.style.display = "none"; }, 5000);
     } else {
         let data = [
             {
@@ -39,12 +39,12 @@ const handleSubmitMail = (event) => {
                 document.getElementById('formEmail').reset();
                 let alertSucces = document.getElementById('mail_success_email');
                 alertSucces.style.display = "block";
-                setTimeout(function () { alertSucces.style.display = "none"; }, 3000);
+                setTimeout(function () { alertSucces.style.display = "none"; }, 5000);
             },
             error: function (response) {
                 let alertError = document.getElementById('mail_fail_email');
                 alertError.style.display = "block";
-                setTimeout(function () { alertError.style.display = "none"; }, 3000);
+                setTimeout(function () { alertError.style.display = "none"; }, 5000);
             }
         });
     }
@@ -63,7 +63,7 @@ const handleSubmitContact = (event) => {
         let alertError = document.getElementById('mail_fail_contact');
         alertError.style.display = "block";
         alertError.innerHTML = mensajeValidarMail;
-        setTimeout(function () { alertError.style.display = "none"; }, 3000);
+        setTimeout(function () { alertError.style.display = "none"; }, 5000);
     } else {
         let data = [
             {
@@ -103,12 +103,12 @@ const handleSubmitContact = (event) => {
                 document.getElementById('contact_form').reset();
                 let alertSucces = document.getElementById('mail_success_contact');
                 alertSucces.style.display = "block";
-                setTimeout(function () { alertSucces.style.display = "none"; }, 3000);
+                setTimeout(function () { alertSucces.style.display = "none"; }, 5000);
             },
             error: function (response) {
                 let alertError = document.getElementById('mail_fail_contact');
                 alertError.style.display = "block";
-                setTimeout(function () { alertError.style.display = "none"; }, 3000);
+                setTimeout(function () { alertError.style.display = "none"; }, 5000);
             }
         });
     }
