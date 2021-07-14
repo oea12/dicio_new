@@ -56,7 +56,7 @@ const handleSubmitContact = (event) => {
     let name = document.getElementById('name');
     let correo = document.getElementById('correo');
     let phone = document.getElementById('phone');
-    let empresa = document.getElementById('empresa');
+    let company = document.getElementById('company');
     let message = document.getElementById('message');
 
     if (/@hotmail.com\s*$/.test(correo.value.toLowerCase()) || /@gmail.com\s*$/.test(correo.value.toLowerCase()) || /@outlook.com\s*$/.test(correo.value.toLowerCase()) || /@yahoo.com\s*$/.test(correo.value.toLowerCase())) {
@@ -79,8 +79,8 @@ const handleSubmitContact = (event) => {
                 "value": phone.value
             },
             {
-                "name": "empresa",
-                "value": empresa.value
+                "name": "company",
+                "value": company.value
             },
             {
                 "name": "mensaje",
