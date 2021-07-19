@@ -13079,3 +13079,17 @@ section .wave.wave4 {
     color: #e7505a;
     padding-bottom: 20px;
 }
+
+@media screen and (max-width:799px) {
+}
+
+@media screen and (max-width:767px) {
+    .notice {
+    }
+}
+
+.notice {
+    margin: auto;
+    padding: auto;
+    width: 80%;
+}
