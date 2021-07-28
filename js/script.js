@@ -1,16 +1,16 @@
 'use strict';
 
+var mensajeValidarMail = "No se admiten correos con dominio hotmail.com, gmail.com, outlook.com o yahoo.com.";
+
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     let listNav = document.getElementById('navbar-collapse-1');
     listNav.classList.remove('pull-right');
 }
 
-let mensajeValidarMail = "No se admiten correos con dominio hotmail.com, gmail.com, outlook.com o yahoo.com.";
-
-const handleSubmitMail = (event) => {
+function handleSubmitMail (event) {
     event.preventDefault();
     let email = document.getElementById('email');
-
+    console.log("email",email);
     if (/@hotmail.com\s*$/.test(email.value.toLowerCase()) || /@gmail.com\s*$/.test(email.value.toLowerCase()) || /@outlook.com\s*$/.test(email.value.toLowerCase()) || /@yahoo.com\s*$/.test(email.value.toLowerCase())) {
         let alertError = document.getElementById('mail_fail_email');
         alertError.style.display = "block";
@@ -51,7 +51,7 @@ const handleSubmitMail = (event) => {
 
 }
 
-const handleSubmitContact = (event) => {
+function handleSubmitContact (event) {
     event.preventDefault();
     let name = document.getElementById('name');
     let correo = document.getElementById('correo');
