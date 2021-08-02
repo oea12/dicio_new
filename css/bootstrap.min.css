@@ -38,9 +38,7 @@
 ::after,
 ::before {
     box-sizing: border-box;
-    padding-bottom: 1px;
     z-index: auto;
-    margin-left: 0px;
 }
 
 html {
@@ -66,7 +64,6 @@ hgroup,
 main,
 nav,
 section {
-    display: block;
 }
 
 body {
@@ -481,15 +478,14 @@ mark {
 
 .list-inline {
     list-style: none;
-    margin: auto;
+    display: inherit;
 }
 
 .list-inline-item {
-    display: inline-block;
+    display: inline-flex;
 }
 
 .list-inline-item:not(:last-child) {
-    margin-right: .5rem;
 }
 
 .initialism {
@@ -1198,8 +1194,7 @@ pre code {
         -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
-        margin-top: -156px;
-        margin-left: -13px;
+        margin-left: -;
     }
 
     .col-md-9 {

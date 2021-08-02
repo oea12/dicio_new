@@ -177,9 +177,8 @@ ul li {
             Banner
 *************************** */
 .banner {
-    padding: 365px 0 0;
-    position: relative;
-    max-height: 912px;
+    margin: 16rem auto auto;
+    max-height: 37rem;
 }
 
 .bnr-left-sape {
@@ -227,7 +226,6 @@ ul li {
     color: #666666;
     display: block;
     font-size: 24px;
-    margin-right: 67px;
 }
 
 .banner .bnr-social {
@@ -248,7 +246,8 @@ ul li {
 }
 
 .banner .bnr-btn {
-    margin-top: auto;
+    margin-top: 17px;
+    display: inline-flex;
 }
 
 .banner .bnr-btn ul li a:hover {
@@ -256,7 +255,7 @@ ul li {
 }
 
 .banner .bnr-btn ul {
-    margin-top: 30px;
+    padding-left: 0px;
 }
 
 .banner .bnr-btn ul li a {
@@ -264,10 +263,11 @@ ul li {
     color: #666666;
     border-radius: 10px;
     display: inline-block;
-    margin-right: 15px;
     border: 1px solid #ececec;
     background: -webkit-radial-gradient(center bottom, #f3f3f3 0%, rgb(255, 255, 255) 100%);
     box-shadow: 5px 12px 39px #cacaca;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .banner .bnr-btn ul li a:hover {
@@ -2041,7 +2041,9 @@ floating
         height: auto !important;
         padding-left: 0;
         padding-right: 0;
-        padding-bottom: 0;
+        padding-bottom: 0px;
+        margin-bottom: -2rem;
+        margin-top: 7rem;
     }
 
     .banner-3 {
@@ -12458,6 +12460,8 @@ align-content: {
 
     .banner {
         height: auto !important;
+        margin-bottom: 0rem;
+        margin-top: 8rem;
     }
 }
 
@@ -12526,12 +12530,12 @@ align-content: {
 .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
-    width: 40%;
+    width: 80%;
     overflow: hidden;
-    display: flex;
-    border: 7px solid #888;
-    border-radius: 9px;
+    border-radius: 20px;
+    border: 1px solid rgba(136, 136, 136, 0.18);
+    box-shadow: 0px 0px 21px 2px rgba(35, 35, 35, 0.3);
+    padding: 20px;
 }
 
 /* The Close Button */
@@ -12894,9 +12898,9 @@ section .wave.wave4 {
 
 @media screen and (max-width:1023px) {
     .wowhead {
-        margin-top: -194px;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
 }
 
@@ -12907,10 +12911,9 @@ section .wave.wave4 {
     }
 
     .but {
-        position: center;
-        text-align: center;
         padding: 0px 0px 0px 5px;
         margin: auto;
+        text-align: center;
     }
 }
 
@@ -13095,4 +13098,29 @@ section .wave.wave4 {
     margin: auto;
     padding: auto;
     width: 80%;
+}
+
+.but {
+    padding: 0px;
+    margin: 0;
+    display: flex;
+}
+
+.hey {
+    display: inline-flex;
+}
+
+@media screen and (max-width:499px) {
+    .but {
+        display: inline;
+    }
+}
+
+@media screen and (max-width:299px) {
+    .banner {
+    }
+
+    .banner {
+        margin-bottom: 13rem;
+    }
 }
