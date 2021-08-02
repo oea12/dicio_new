@@ -177,9 +177,8 @@ ul li {
             Banner
 *************************** */
 .banner {
-    padding: 365px 0 0;
-    position: relative;
-    max-height: 912px;
+    margin: 16rem auto auto;
+    max-height: 37rem;
 }
 
 .bnr-left-sape {
@@ -227,7 +226,6 @@ ul li {
     color: #666666;
     display: block;
     font-size: 24px;
-    margin-right: 67px;
 }
 
 .banner .bnr-social {
@@ -248,7 +246,8 @@ ul li {
 }
 
 .banner .bnr-btn {
-    margin-top: auto;
+    margin-top: 17px;
+    display: inline-flex;
 }
 
 .banner .bnr-btn ul li a:hover {
@@ -256,7 +255,7 @@ ul li {
 }
 
 .banner .bnr-btn ul {
-    margin-top: 30px;
+    padding-left: 0px;
 }
 
 .banner .bnr-btn ul li a {
@@ -264,10 +263,11 @@ ul li {
     color: #666666;
     border-radius: 10px;
     display: inline-block;
-    margin-right: 15px;
     border: 1px solid #ececec;
     background: -webkit-radial-gradient(center bottom, #f3f3f3 0%, rgb(255, 255, 255) 100%);
     box-shadow: 5px 12px 39px #cacaca;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .banner .bnr-btn ul li a:hover {
@@ -2037,8 +2037,13 @@ floating
     }
 
     .banner {
-        padding: 100px 0 0;
         text-align: center;
+        height: auto !important;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0px;
+        margin-bottom: -2rem;
+        margin-top: 7rem;
     }
 
     .banner-3 {
@@ -11527,8 +11532,8 @@ Copyright (c) 2015 Daniel Eden
     font-family: 'Mulish', sans-serif;
     color: #ffffff;
     font-weight: 700;
-    font-size: 15px;
     top: -17px;
+    font-size: 15px;
 }
 
 .feature-panel_new {
@@ -12295,6 +12300,62 @@ align-content: {
     width: 100%;
 }
 
+/* Safari 10.1+ */
+@media not all and (min-resolution:.001dpcm) {
+    .blob1 {
+        height: 857px;
+        z-index: -10;
+        position: relative;
+        margin-bottom: 0;
+        margin-left: 0px;
+        top: -;
+        display: none;
+        background-image: url('../images/img-5.svg');
+    }
+
+    .blob3 {
+        left: 1768px;
+        z-index: -16;
+        display: none;
+        overflow: scroll;
+        position: absolute;
+        margin-top: -290px;
+    }
+
+    .blob4k2 {
+        height: 2136px;
+        z-index: -14;
+        left: -1756px;
+        top: 1550px;
+        position: absolute;
+        margin-bottom: -1337px;
+        display: none;
+        float: left;
+    }
+
+    .blob34k {
+        left: 2884px;
+        z-index: -16;
+        display: none;
+        overflow: scroll;
+        position: absolute;
+        margin-top: -290px;
+        top: 3000px;
+        height: 1677px;
+    }
+
+    .blob34k6 {
+        left: 2884px;
+        z-index: -16;
+        display: none;
+        overflow: scroll;
+        position: absolute;
+        margin-top: -290px;
+        top: 6000px;
+        height: 1677px;
+    }
+}
+
 .blob1 {
     height: 857px;
     z-index: -10;
@@ -12371,8 +12432,8 @@ align-content: {
 
 .class2 {
     z-index: -6;
-    margin: auto auto 365px;
     height: auto;
+    margin: 34px auto 348px;
 }
 
 .spce2 {
@@ -12399,6 +12460,8 @@ align-content: {
 
     .banner {
         height: auto !important;
+        margin-bottom: 0rem;
+        margin-top: 8rem;
     }
 }
 
@@ -12471,8 +12534,9 @@ align-content: {
     width: 40%;
     overflow: hidden;
     display: flex;
-    border: 7px solid #888;
-    border-radius: 9px;
+    border-radius: 20px;
+    border: 1px solid rgba(136, 136, 136, 0.18);
+    box-shadow: 0px 0px 21px 2px rgba(35, 35, 35, 0.3);
 }
 
 /* The Close Button */
@@ -12585,14 +12649,12 @@ align-content: {
         top: 1550px;
         position: absolute;
         margin-bottom: -1337px;
-        display: inline;
         float: left;
     }
 
     .blob34k {
         left: 2884px;
         z-index: -16;
-        display: inline;
         overflow: scroll;
         position: absolute;
         margin-top: -290px;
@@ -12603,7 +12665,6 @@ align-content: {
     .blob34k6 {
         left: 2884px;
         z-index: -16;
-        display: inline;
         overflow: scroll;
         position: absolute;
         margin-top: -290px;
@@ -12745,8 +12806,10 @@ section .wave.wave4 {
 }
 
 .imgfo {
+    margin: auto;
+    padding: auto;
     position: relative;
-    right: 160px;
+    left: -158px;
 }
 
 .texti {
@@ -12807,6 +12870,7 @@ section .wave.wave4 {
     font-family: 'Mulish', sans-serif;
     font-size: 15px;
     color: #ffffff;
+    margin: auto 30px;
 }
 
 .testimonials2 {
@@ -12835,7 +12899,9 @@ section .wave.wave4 {
 
 @media screen and (max-width:1023px) {
     .wowhead {
-        margin: -194px auto auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 }
 
@@ -12846,9 +12912,8 @@ section .wave.wave4 {
     }
 
     .but {
+        padding: 0px 0px 0px 5px;
         margin: auto;
-        padding: auto;
-        position: center;
         text-align: center;
     }
 }
@@ -12927,7 +12992,8 @@ section .wave.wave4 {
 
 @media screen and (max-width:499px) {
     .section-title h1 {
-        font-size: 23px;
+        font-size: 24px;
+        margin: 10px;
     }
 
     .imgsvg {
@@ -12952,5 +13018,110 @@ section .wave.wave4 {
     }
 
     .feat {
+    }
+
+    .featuresm {
+    }
+}
+
+@media screen and (max-width:413px) {
+    .iconssm {
+        font-size: 1px;
+    }
+
+    .new_class {
+        font-family: 'Mulish', sans-serif;
+        font-size: 12px;
+    }
+
+    .feature--content {
+        width: 100%;
+        margin: auto;
+        line-height: 14px;
+    }
+
+    .section-title > span {
+        font-size: 16px;
+        margin: auto;
+        text-align: center;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .hello2 {
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width:413px) {
+    .spce2 {
+        height: 38px;
+    }
+}
+
+.team-social {
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (max-width:1199px) {
+    .wowhead {
+    }
+}
+
+.success {
+    clear: both;
+    display: none;
+    color: #96c346;
+    padding-bottom: 20px;
+}
+
+.error {
+    clear: both;
+    display: none;
+    color: #e7505a;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width:799px) {
+}
+
+@media screen and (max-width:767px) {
+    .notice {
+    }
+}
+
+.notice {
+    margin: auto;
+    padding: auto;
+    width: 80%;
+}
+
+.but {
+    padding: 0px;
+    margin: 0;
+    display: flex;
+}
+
+.hey {
+    display: inline-flex;
+}
+
+@media screen and (max-width:499px) {
+    .but {
+        display: inline;
+    }
+}
+
+@media screen and (max-width:299px) {
+    .banner {
+    }
+
+    .banner {
+        margin-bottom: 13rem;
     }
 }

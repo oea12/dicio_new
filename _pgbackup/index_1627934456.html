@@ -20,11 +20,13 @@
         <link rel="stylesheet" href="css/datepicker.css">
         <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
         <link rel="stylesheet" href="css/prettyphoto.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
         <link rel="stylesheet" href="js/vendors/owl-carousel/owl.theme.css">
         <link rel="stylesheet" href="js/vendors/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="js/vendors/owl-carousel/owl.transitions.css">
         <link rel="stylesheet" href="css/morris.css">
         <link rel="stylesheet" href="css/jquery.jqplot.css">
+        <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
         <title>DICIO - Tan Único Como Tú</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish&display=swap">
     </head>
@@ -39,15 +41,15 @@
                         <div class="spinner"></div>
                         <div class="txt-loading">
                             <span data-text-preloader="D" class="letters-loading">
-								D </span>
+                            D </span>
                             <span data-text-preloader="I" class="letters-loading">
-								I </span>
+                            I </span>
                             <span data-text-preloader="C" class="letters-loading">
-								C </span>
+                            C </span>
                             <span data-text-preloader="I" class="letters-loading">
-								I </span>
+                            I </span>
                             <span data-text-preloader="O" class="letters-loading">
-								O </span>
+                            O </span>
                         </div>
                     </div>
                     <div class="loader-section section-left"></div>
@@ -93,7 +95,7 @@
                 <div class="row">
                     <div class="col-md-8 fadeInLeft wow wowhead wowxs" data-wow-duration="2.5s">
                         <div class="bnr-social">
-                            <ul class="list-inline but ">
+                            <ul class="but hey list-inline">
                                 <li class="list-inline-item">
                                     <a target="_blank" href="https://www.linkedin.com/company/dicio-ai/mycompany/?viewAsMember=true"><i class="fa fa-fw fa-linkedin"></i></a>
                                 </li>
@@ -112,7 +114,8 @@
                             </ul>
                         </div>
                         <h1>Simplificamos las interacciones de la sociedad</h1>
-                        <p><p>Desarrollamos soluciones de identificación digital totalmente seguras, además te ofrecemos las mejores soluciones basadas en Biometría, Inteligencia Artificial y Blockchain.</p></p>
+                        <p> <p>Desarrollamos soluciones de identificación digital totalmente seguras, además te ofrecemos
+                            las mejores soluciones basadas en Biometría, Inteligencia Artificial y Blockchain.</p> </p>
                         <div class="bnr-btn">
                             <ul class="but list-inline ">
                                 <li class="list-inline-item">
@@ -124,58 +127,61 @@
                                         <!-- Modal content -->
                                         <div id="popup" class="modal-content">
                                             <span class="close">&times;</span>
-                                            <div class="row contact-form">
+                                            <form id="formEmail" class="row contact-form" onsubmit="handleSubmitMail(event)">
                                                 <div class="col-md-6">
                                                     <h2 class="news">
-                        Registra tu mail para darte más información. </h2>
-                                                    <input type="email" class="form-control" placeholder="E-mail">
+                                                    Registra tu mail para darte más información. </h2>
+                                                    <input id="email" type="email" class="form-control" placeholder="E-mail">
+                                                </div>
+                                                <div class="col-12">
+                                                    <span id="mail_success_email" class="success">Tu información fue enviada exitosamente.</span>
+                                                    <span id="mail_fail_email" class="error">Ocurrio un error al enviar la información.</span>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="thegncy-btn">
                                                         <input class="contact-btn" type="submit" value="Enviar ahora">
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </form>
                                         </div>
                                     </div>
                                     <script>
-// Get the modal
-var modal = document.getElementById("myModal");
+                                    // Get the modal
+                                    var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+                                    // Get the button that opens the modal
+                                    var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+                                    // Get the <span> element that closes the modal
+                                    var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-        var x=window.scrollX;
-    var y=window.scrollY;
-    window.onscroll=function(){window.scrollTo(x, y);};
-}
-
-
-
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-     window.onscroll=function(){};
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-       window.onscroll=function(){};
-  }
-}
- 
+                                    // When the user clicks the button, open the modal 
+                                    btn.onclick = function () {
+                                        modal.style.display = "block";
+                                        var x = window.scrollX;
+                                        var y = window.scrollY;
+                                        window.onscroll = function () {
+                                            window.scrollTo(x, y);
+                                        };
+                                    }
 
 
-</script>
+
+
+                                    // When the user clicks on <span> (x), close the modal
+                                    span.onclick = function () {
+                                        modal.style.display = "none";
+                                        window.onscroll = function () {};
+                                    }
+
+                                    // When the user clicks anywhere outside of the modal, close it
+                                    window.onclick = function (event) {
+                                        if (event.target == modal) {
+                                            modal.style.display = "none";
+                                            window.onscroll = function () {};
+                                        }
+                                    }
+                                </script>
                                 </li>
                             </ul>
                         </div>
@@ -187,7 +193,7 @@ window.onclick = function(event) {
                 <div class=" bnr-shape-img-2 phone">
                     <img src="images/bnr-shape-2.png" alt="logo" width="810" class="img1200 imghero">
                     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_mlf754me.json" background="transparent" speed="1" loop autoplay class="blob1 blob1200 hideblobsm"></lottie-player>
+                    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_mlf754me.json" background="transparent" speed="1" loop autoplay class="blob1 blob1200 hideblobsm blob111d"></lottie-player>
                 </div>
             </div>
         </section>
@@ -197,45 +203,45 @@ window.onclick = function(event) {
                 <div class="col-md-12" style="z-index: -8;">
                     <div class="section-title text-center">
                         <h1 style="color: #0883f5;">Utiliza DICIO para agilizar procesos dentro de tu organización.</h1>
-                        <h4><h2 class="h2">Desarrollamos soluciones que garantizan procesos de identificación digital de una manera fácil y segura.&nbsp;</h2></h4>
+                        <h4> <h2 class="h2">Desarrollamos soluciones que garantizan procesos de identificación digital de
+                            una manera fácil y segura.&nbsp;</h2> </h4>
                     </div>
                     <div class="space" style="height: 40px"></div>
                 </div>
                 <div class="col-lg-4 col-sm-6 fadeInUp wow zin" data-wow-duration="1s">
                     <div class="service-item">
                         <i class="flaticon-usuario"></i>
-                        <h5><p>Apertura de cuenta remota&nbsp;</p></h5>
+                        <h5> <p>Apertura de cuenta remota&nbsp;</p> </h5>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 fadeInUp wow zin" data-wow-duration="1.5s">
                     <div class="service-item">
                         <i class="flaticon-contrato"></i>
-                        <h5><p>Onboarding con validación de firmas y documentos digitales&nbsp;</p></h5>
+                        <h5> <p>Onboarding con validación de firmas y documentos digitales&nbsp;</p> </h5>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 fadeInUp wow zin" data-wow-duration="2.5s">
                     <div class="service-item">
                         <i class="flaticon-reconocimiento-facial"></i>
-                        <h5><p>Validación biométrica con cualquier dispositivo&nbsp;</p></h5>
+                        <h5> <p>Validación biométrica con cualquier dispositivo&nbsp;</p> </h5>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 fadeInUp wow zin" data-wow-duration="2.5s">
                     <div class="service-item">
                         <i class="flaticon-phone"></i>
-                        <h5><p>OCR: Reconocimiento Óptico de Caracteres&nbsp;</p></h5>
+                        <h5> <p>OCR: Reconocimiento Óptico de Caracteres&nbsp;</p> </h5>
                     </div>
                     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                 </div>
                 <div class="col-lg-4 col-sm-6 fadeInUp wow zin" data-wow-duration="2.5s">
                     <div class="service-item">
                         <i class="flaticon-banco"></i>
-                        <h5><p>Verificación con INE Y RENAPO</p></h5>
+                        <h5> <p>Verificación con INE Y RENAPO</p> </h5>
                     </div>
                     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                 </div>
             </div>
         </div>
-        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ojqrskc0.json" background="transparent" speed="1" loop autoplay class="blob2 blob4k2 hideblobsm"></lottie-player>
         <div id="Pilares" class="spce2"></div>
         <div class="cont12 container">
             <div class="pilares row">
@@ -247,9 +253,10 @@ window.onclick = function(event) {
                     <div class="d-block d-sm-none space spacesm" style="height: 60px"></div>
                     <div class="section-title">
                         <h4 style="color: #0883f5; font-size: 30px;">Acerca de nosotros</h4>
-                        <h1>Pilares</h1>
+                        <h1>Pilares de negocio</h1>
                     </div>
-                    <p style="text-align: justify;">Desarrollamos herramientas seguras, inteligentes y altamente competitivas para facilitar las interacciones digitales de nuestros clientes.</p>
+                    <p style="text-align: justify;">Desarrollamos herramientas seguras, inteligentes y altamente
+                    competitivas para facilitar las interacciones digitales de nuestros clientes.</p>
                     <ul>
                         <li>Más clientes con vinculación no presencial, fuera del horario de sucursal (Multicanal).</li>
                         <li>Optimiza tiempos de respuesta, mayor disponibilidad.</li>
@@ -263,12 +270,11 @@ window.onclick = function(event) {
                 </div>
             </div>
         </div>
-        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ojqrskc0.json" background="transparent" speed="1" loop autoplay class="blob3 blob34k hideblobsm w-75"></lottie-player>
         <div id="features3" class="space" style="height: 58px; margin-top: 0;"></div>
         <div class="container">
             <div class="row">
                 <div data-tilt class="hello3 fadeInLeft spacecon wow">
-                    <iframe class="classchiq hello12 hello2 hello923 img-fluid" src="https://www.youtube.com/embed/Sif73YmvkPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="classchiq hello12 hello2 hello923 img-fluid" src="https://www.youtube.com/embed/CkuKeTyAPc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <img class="img-fluid img-shadow2 img-shadow3" src="images/img-4.png" alt="img">
                 </div>
                 <div class="col-lg-5 fadeInLeft spacecon wow" data-wow-duration="2.5s">
@@ -279,7 +285,8 @@ window.onclick = function(event) {
                     <div class="space" style="height: 50px"></div>
                     <div class="bounceInUp feature-item newclass wow" data-wow-duration="2.5s">
                         <div class="feature-item-content">
-                            <p style="text-align: justify;">Da la opción a tus clientes de abrir una cuenta bancaria de forma fácil, sencilla y sin la necesidad de acudir a una sucursal.</p>
+                            <p style="text-align: justify;">Da la opción a tus clientes de abrir una cuenta bancaria de
+                            forma fácil, sencilla y sin la necesidad de acudir a una sucursal. Validando su identidad de forma inmediata con acreditación por la Secretaría de Economía y cumpliendo con la NOM 151</p>
                         </div>
                     </div>
                 </div>
@@ -296,12 +303,15 @@ window.onclick = function(event) {
                     <div class="space" style="height: 50px"></div>
                     <div class="bounceInUp feature-item newclass wow" data-wow-duration="2.5s">
                         <div class="feature-item-content">
-                            <p style="text-align: justify;">Realiza cualquier trámite con tus clientes sin la necesidad de utilizar su firma autógrafa. Registra y valida su información de manera digital, a través de nuestra plataforma Consentimiento Expreso acreditada por la Secretaría de Economía y cumplimiento de la NOM 151.</p>
+                            <p style="text-align: justify;">Realiza cualquier trámite con tus clientes sin la necesidad de
+                            utilizar su firma autógrafa. Registra y valida su información de manera digital, a través de
+                            nuestra plataforma Consentimiento Expreso acreditada por la Secretaría de Economía y
+                            cumplimiento de la NOM 151.</p>
                         </div>
                     </div>
                 </div>
                 <div data-tilt class="hello3 fadeInLeft spacecon wow">
-                    <iframe class="classchiq hello12 hello2 hello923 img-fluid" src="https://www.youtube.com/embed/gJ1E0pw9MBs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="classchiq hello12 hello2 hello923 img-fluid" src="https://www.youtube.com/embed/w5cAPZbpFws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <img class="img-fluid img-shadow2 img-shadow3" src="images/img-4.png" alt="img">
                 </div>
             </div>
@@ -401,9 +411,10 @@ window.onclick = function(event) {
                 <div class="col-lg-5 wow fadeInLeft" data-wow-duration="2.5s">
                     <div class="section-title">
                         <span>DICIO</span>
-                        <h1 class="h1sm">Tecnología que facilita las <span>interacciones</span> entre empresa y personas.</h1>
-                        <p class="texti textism">Nuestros procesos cumplen con el artículo 51 de la Circular Única Bancaria y
-la Norma Oficial Mexicana 151.</p>
+                        <h1 class="h1sm">Tecnología que facilita las <span>interacciones</span> entre empresa y personas. </h1>
+                        <p class="texti textism">Nuestros procesos cumplen con el artículo 51 de la Circular Única Bancaria
+                        y
+                        la Norma Oficial Mexicana 151.</p>
                         <img src="images/dot-bluecolor.png" alt="img">
                     </div>
                     <div class="space" style="height: 50px"></div>
@@ -413,7 +424,8 @@ la Norma Oficial Mexicana 151.</p>
                         </div>
                         <div class="feature-item-content">
                             <h5>CRYPTO FACE KEY</h5>
-                            <p class="texti textism">Genera un biométrico facial y un score de vida de los individuos procesando esta información de manera segura.</p>
+                            <p class="texti textism">Genera un biométrico facial y un score de vida de los individuos
+                            procesando esta información de manera segura.</p>
                         </div>
                     </div>
                     <div class="feature-item wow bounceInUp" data-wow-duration="3s">
@@ -422,8 +434,10 @@ la Norma Oficial Mexicana 151.</p>
                         </div>
                         <div class="feature-item-content">
                             <h5>VALIDACIÓN EN
-BLOCKCHAIN</h5>
-                            <p class="texti textism">Esta tecnología permite hacer una auditoría, logrando tener una trazabilidad en tiempo y forma de las operaciones. Así mismo teniendo un seguimiento de la transacción de principio a fin. </p>
+                            BLOCKCHAIN</h5>
+                            <p class="texti textism">Esta tecnología permite hacer una auditoría, logrando tener una
+                            trazabilidad en tiempo y forma de las operaciones. Así mismo teniendo un seguimiento de la
+                            transacción de principio a fin. </p>
                         </div>
                     </div>
                     <div class="feature-item wow bounceInUp" data-wow-duration="3.5s">
@@ -432,7 +446,9 @@ BLOCKCHAIN</h5>
                         </div>
                         <div class="feature-item-content">
                             <h5>HOLOGRAMA</h5>
-                            <p class="texti textism">Genera una mayor certeza a la evidencia presentada por parte de los usuarios, al validar que existan los mecanismos holográficos de seguridad en sus documentos oficiales. Utilizando nuestro modelo de Inteligencia artificial.</p>
+                            <p class="texti textism">Genera una mayor certeza a la evidencia presentada por parte de los
+                            usuarios, al validar que existan los mecanismos holográficos de seguridad en sus documentos
+                            oficiales. Utilizando nuestro modelo de Inteligencia artificial.</p>
                         </div>
                     </div>
                 </div>
@@ -441,7 +457,6 @@ BLOCKCHAIN</h5>
                 </div>
             </div>
         </div>
-        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ojqrskc0.json" background="transparent" speed="1" loop autoplay class="blob3 blob34k6 w-75 hideblobsm"></lottie-player>
         <div id="portfolio" class="space" style="height: 100px"></div>
         <div id="clientes" class="space" style="height: 100px"></div>
         <div class="divspace divspacesm space"></div>
@@ -451,7 +466,8 @@ BLOCKCHAIN</h5>
                     <div class="col-md-12">
                         <div class="section-title text-center white">
                             <span>Casos de Éxito</span>
-                            <h1>Nos enorgullece que nuestros clientes siempre cumplan sus metas y objetivos  en colaboración con DICIO.</h1>
+                            <h1>Nos enorgullece que nuestros clientes siempre cumplan sus metas y objetivos en colaboración
+                            con DICIO.</h1>
                             <img src="images/dot-white.png" alt="img">
                         </div>
                         <div class="space" style="height: 35px"></div>
@@ -459,11 +475,13 @@ BLOCKCHAIN</h5>
                     <div class="col-lg-8 col-sm-12">
                         <div class="testimonials">
                             <div class="testimonial-item">
-                                <p>Se implementó un proceso para sustituir la firma en papel por un proceso 100% digital, que favorece el almacenamiento y gestión de medios físicos. Garantizando validez legal.</p>
+                                <p>Se implementó un proceso para sustituir la firma en papel por un proceso 100% digital,
+                                que favorece el almacenamiento y gestión de medios físicos. Garantizando validez legal. </p>
                                 <h4>SOCIEDAD DE INFORMACIÓN CREDITICIA</h4>
                             </div>
                             <div class="testimonial-item">
-                                <p>Agregó a su proceso existente mecanismos que le permiten mitigar el uso de credenciales apócrifas, además de poder conocer la vigencia de la credencial para votar INE.</p>
+                                <p>Agregó a su proceso existente mecanismos que le permiten mitigar el uso de credenciales
+                                apócrifas, además de poder conocer la vigencia de la credencial para votar INE.</p>
                                 <h4>EMPRESA DE IDENTIFICACIÓN DIGITAL</h4>
                             </div>
                         </div>
@@ -490,10 +508,10 @@ BLOCKCHAIN</h5>
                                 <img src="images/team/New/Mesa%20de%20trabajo%203.jpg" class="img-responsive" alt="">
                                 <div class="team-overlay">
                                     <div class="team-overlay-inner text-center">
-                                        <h4 class="team_img">RICARDO TORICES <span>Director de Producto</span></h4>
-                                        <div class="team-social">
-                                            <a href="https://www.linkedin.com/in/ricardo-torices-4bb58651/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                        </div>
+                                        <h4 class="team_img">RICARDO TORICES <span>Director de Producto Biométrico</span> </h4>
+                                    </div>
+                                    <div class="team-social">
+                                        <a href="https://www.linkedin.com/in/ricardo-torices-4bb58651/" target="_blank"><i class="fa fa-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -505,10 +523,10 @@ BLOCKCHAIN</h5>
                                 <img src="images/team/New/Mesa%20de%20trabajo%201.jpg" class="img-responsive" alt="">
                                 <div class="team-overlay">
                                     <div class="team-overlay-inner text-center">
-                                        <h4 class="team_img">JULIÁN CARDONA <span>Director Comercial</span></h4>
-                                        <div class="team-social">
-                                            <a href="https://www.linkedin.com/in/julianmcardona/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                        </div>
+                                        <h4 class="team_img">JULÍAN CARDONA <span>Director Comercial</span></h4>
+                                    </div>
+                                    <div class="team-social">
+                                        <a href="https://www.linkedin.com/in/julianmcardona/" target="_blank"><i class="fa fa-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -570,7 +588,7 @@ BLOCKCHAIN</h5>
                                 <img src="images/team/New/Mesa%20de%20trabajo%206.jpg" class="img-responsive" alt="">
                                 <div class="team-overlay">
                                     <div class="team-overlay-inner text-center">
-                                        <h4 class="team_img">ALEJANDRO RODRÍGUEZ <span>Director de producto Biométrico</span></h4>
+                                        <h4 class="team_img">ALEJANDRO RODRÍGUEZ<span>Director de Blockchain</span></h4>
                                         <div class="team-social">
                                             <a href="https://www.linkedin.com/in/edgar-alejandro-rodriguez-zavala-99304466/" target="_blank"><i class="fa fa-linkedin"></i></a>
                                         </div>
@@ -598,30 +616,32 @@ BLOCKCHAIN</h5>
                     <div class="section-title">
                         <span>Agenda un tour de nuestro producto de la mano de nuestros expertos.</span>
                         <h1>Las soluciones de <span>DICIO</span> están listas para ser integradas al flujo de trabajo
-de tu empresa.</h1>
+                        de tu empresa.</h1>
                         <img src="images/dot-bluecolor.png" alt="img">
                     </div>
                     <div class="space" style="height: 50px"></div>
-                    <div class="row contact-form">
+                    <form name="contactForm" id="contact_form" class="row contact-form" onsubmit="handleSubmitContact(event)">
                         <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Nombre">
+                            <input type="text" class="form-control" placeholder="Nombre" name="name" id="name">
                         </div>
                         <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="E-mail">
+                            <input type="email" class="form-control" placeholder="E-mail" name="correo" id="correo">
                         </div>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Télefono">
+                            <input type="text" class="form-control" placeholder="Télefono" name="phone" id="phone">
                         </div>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Empresa">
+                            <input type="text" class="form-control" placeholder="Empresa" name="company" id="company">
                         </div>
                         <div class="col-md-12">
-                            <textarea class="form-control" rows="3"></textarea>
-                            <div class="thegncy-btn">
-                                <input class="contact-btn" type="submit" value="Enviar ahora">
+                            <textarea class="form-control" rows="3" name="message" id="message"></textarea>
+                            <span id="mail_success_contact" class="success">Tu información fue enviada exitosamente.</span>
+                            <span id="mail_fail_contact" class="error">Ocurrio un error al enviar la información.</span>
+                            <div class="thegncy-btn" id="submit">
+                                <input class="contact-btn" type="submit" value="Enviar ahora" id="send_message">
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -645,7 +665,7 @@ de tu empresa.</h1>
                         <a href="Notice.html" target="_blank">Aviso de privacidad</a>
                     </li>
                     <li class="footer2 footersm ">
-                        <a href="#cta">Contacto</a>
+                        <a href="#contact">Contacto</a>
                     </li>
                 </div>
             </div>
@@ -681,7 +701,8 @@ de tu empresa.</h1>
             <column class="Foot">
                 <div class=" dicio2">
                     <p class="textfoot">info@dicio.ai</p>
-                    <p class="textfoot">Piso 2, iOS Offices, Miyanna Av. Ejército Nacional 769 Granada, Miguel Hidalgo 11520, CDMX</p>
+                    <p class="textfoot">Piso 2, iOS Offices, Miyana Av. Ejército Nacional 769 Granada, Miguel Hidalgo
+                    11520, CDMX</p>
                 </div>
             </column>
             <div class="footer-copyright">
@@ -694,7 +715,7 @@ de tu empresa.</h1>
         <script src="assets/js/jquery-2.2.4.min.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/functions.js"></script>
-        <script src="js/bootstrap-slider.min.js"></script>
+        <!-- <script src="js/bootstrap-slider.min.js"></script> -->
         <script src="js/slick.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/script.js"></script>
@@ -711,4 +732,31 @@ de tu empresa.</h1>
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/main.js"></script>
     </body>
+    <!-- Facebook Pixel Code -->
+    <script>
+    ! function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '558247951849122');
+    fbq('track', 'PageView');
+</script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=558247951849122&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 </html>
