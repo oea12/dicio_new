@@ -2037,8 +2037,11 @@ floating
     }
 
     .banner {
-        padding: 100px 0 0;
         text-align: center;
+        height: auto !important;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
     }
 
     .banner-3 {
