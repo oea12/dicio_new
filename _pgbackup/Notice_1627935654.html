@@ -27,8 +27,6 @@
         <link rel="stylesheet" href="css/jquery.jqplot.css">
         <title>DICIO - Tan Único Como Tú</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish&display=swap">
-        <title>DICIO | Tán unico como tú</title>
-        <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
     </head>
     <body>
         <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
@@ -38,6 +36,10 @@
       <script src="assets/js/html5shiv.js"></script>
       <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+        <title>DICIO | Tán unico como tú</title>
+        <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
+    </head>
+    <body class="body-scroll">
         <!-- Document Wrapper ============================================= -->
         <div id="wrapper" class="wrapper clearfix">
             <!-- Heade  ============================================= -->
@@ -138,125 +140,146 @@
             <div id="backtotop">
                 <i class="fa fa-2x fa-long-arrow-up"></i>
             </div>
-        </div>
-        <div id="contact" class="space" style="height: 120px"></div>
-        <div class="container">
-            <div class="row">
-                <div class="wow fadeInLeft" data-wow-duration="2.5s">
-                    <div class="section-title">
-                        <span>Agenda un tour de nuestro producto de la mano de nuestros expertos.</span>
-                        <h1>Las soluciones de <span>DICIO</span> están listas para ser integradas al flujo de trabajo
-                        de tu empresa.</h1>
-                        <img src="images/dot-bluecolor.png" alt="img">
-                    </div>
-                    <div class="space" style="height: 50px"></div>
-                    <form name="contactForm" id="contact_form" class="row contact-form" onsubmit="handleSubmitContact(event)">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Nombre" name="name" id="name">
+            <div class="container">
+                <div class="row">
+                    <div class="wow fadeInLeft" data-wow-duration="2.5s">
+                        <div class="section-title">
+                            <span>Agenda un tour de nuestro producto de la mano de nuestros expertos.</span>
+                            <h1>Las soluciones de <span>DICIO</span> están listas para ser integradas al flujo de trabajo
+de tu empresa.</h1>
+                            <img src="images/dot-bluecolor.png" alt="img">
                         </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="E-mail" name="correo" id="correo">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Télefono" name="phone" id="phone">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Empresa" name="company" id="company">
-                        </div>
-                        <div class="col-md-12">
-                            <textarea class="form-control" rows="3" name="message" id="message"></textarea>
-                            <span id="mail_success_contact" class="success">Tu información fue enviada exitosamente.</span>
-                            <span id="mail_fail_contact" class="error">Ocurrio un error al enviar la información.</span>
-                            <div class="thegncy-btn" id="submit">
-                                <input class="contact-btn" type="submit" value="Enviar ahora" id="send_message">
+                        <div class="space" style="height: 50px"></div>
+                        <div class="row contact-form">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Nombre">
                             </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="space" style="height: 50px;"></div>
-        <footer class="site-footer" style="background-color: #1c7ff4; height: 100%;">
-            <section class="anim">
-                <div class="wave wave1"></div>
-                <div class="wave wave2"></div>
-                <div class="wave wave3"></div>
-                <div class="wave wave4"></div>
-            </section>
-            <div class="diciofoot diciofootsm">
-                <div class="footer">
-                    <li class="footer2 footersm">
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li class="footer2 footersm ">
-                        <a href="#features3">Productos</a>
-                    </li>
-                    <li class="footer2 footersm ">
-                        <a href="Notice.html" target="_blank">Aviso de privacidad</a>
-                    </li>
-                    <li class="footer2 footersm ">
-                        <a href="#contact">Contacto</a>
-                    </li>
-                </div>
-            </div>
-            <div class="logofoot">
-                <img src="images/logo-alt.svg" alt="logo" width="300" class="imgfo">
-            </div>
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <column class="Foot">
-                <div class="dicio ¡">
-                    <div class="¡">
-                        <div>
-                            <div class="redes">
-                                <div class="redes_icon">
-                                    <a href="https://www.linkedin.com/company/34744323/admin/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                                <div class="redes_icon">
-                                    <a href="https://twitter.com/Dicio_AI" target="_blank"><i class="fa fa-twitter"></i></a>
-                                </div>
-                                <div class="redes_icon">
-                                    <a href="https://www.facebook.com/Dicioai" target="_blank"><i class="fa fa-facebook-square"></i></a>
-                                </div>
-                                <div class="redes_icon">
-                                    <a href="https://www.instagram.com/dicio.ai/" target="_blank"><i class="fa fa-instagram"></i></a>
-                                </div>
-                                <div class="redes_icon">
-                                    <a href="https://www.youtube.com/channel/UCJ_8A6YXEs2XxAj3cL9-DEg" target="_blank"><i class="fa fa-youtube"></i></a>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="E-mail">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Télefono">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Empresa">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="form-control" rows="3"></textarea>
+                                <div class="thegncy-btn">
+                                    <input class="contact-btn" type="submit" value="Enviar ahora">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </column>
-            <column class="Foot">
-                <div class=" dicio2">
-                    <p class="textfoot">info@dicio.ai</p>
-                    <p class="textfoot">Piso 2, iOS Offices, Miyana Av. Ejército Nacional 769 Granada, Miguel Hidalgo
-                    11520, CDMX</p>
-                </div>
-            </column>
-            <div class="footer-copyright">
-                <p>Copyright &copy; DICIO 2021. All Right Reserved</p>
             </div>
-        </footer>
+            <div class="space" style="height: 50px;"></div>
+            <footer class="site-footer" style="background-color: #1c7ff4; height: 100%;">
+                <section class="anim">
+                    <div class="wave wave1"></div>
+                    <div class="wave wave2"></div>
+                    <div class="wave wave3"></div>
+                    <div class="wave wave4"></div>
+                </section>
+                <div class="diciofoot">
+                    <div class="footer">
+                        <li class="footer2">
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li class="footer2">
+                            <a href="#features3">Productos</a>
+                        </li>
+                        <li class="footer2">
+                            <a href="Notice.html" target="_blank">Aviso de privacidad</a>
+                        </li>
+                        <li class="footer2">
+                            <a href="#contact">Contacto</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="logofoot">
+                    <img src="images/logo-alt.svg" alt="logo" width="300" class="imgfo">
+                </div>
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <column class="Foot">
+                    <div class="dicio ¡">
+                        <div class="¡">
+                            <div>
+                                <div class="redes">
+                                    <div class="redes_icon">
+                                        <a href="https://www.linkedin.com/company/34744323/admin/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                    <div class="redes_icon">
+                                        <a href="https://twitter.com/Dicio_AI" target="_blank"><i class="fa fa-twitter"></i></a>
+                                    </div>
+                                    <div class="redes_icon">
+                                        <a href="https://www.facebook.com/Dicioai" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                    <div class="redes_icon">
+                                        <a href="https://www.instagram.com/dicio.ai/" target="_blank"><i class="fa fa-instagram"></i></a>
+                                    </div>
+                                    <div class="redes_icon">
+                                        <a href="https://www.youtube.com/channel/UCJ_8A6YXEs2XxAj3cL9-DEg" target="_blank"><i class="fa fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </column>
+                <column class="Foot">
+                    <div class=" dicio2">
+                        <p class="textfoot">info@dicio.ai</p>
+                        <p class="textfoot">Piso 2, iOS Offices, Miyanna Av. Ejército Nacional 769 Granada, Miguel Hidalgo 11520, CDMX</p>
+                    </div>
+                </column>
+                <div class="footer-copyright">
+                    <p>Copyright &copy; DICIO 2021. All Right Reserved</p>
+                </div>
+            </footer>
+            <!-- #feature3 end -->
+            <!-- Video
+		============================================= -->
+            <!-- #video end -->
+            <!-- Screenshots
+        ============================================= -->
+            <!-- #screenshots End-->
+            <!-- reviews
+        ============================================= -->
+            <!-- **************** MEET OUR TEAM ***************** -->
+            <!-- **************** MEET OUR TEAM END ***************** -->
+        </div>
+        <!-- #cta1 end -->
+        <!-- Newsletter #1
+
+		============================================= -->
+        <!-- #newsletter end -->
+        <!-- Footer #5
+		============================================= -->
+        <!-- #wrapper end -->
+        <!-- Footer Scripts
+
+	============================================= -->
         <script src="assets/js/jquery-2.2.4.min.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/functions.js"></script>
-        <!-- <script src="js/bootstrap-slider.min.js"></script> -->
-        <script src="js/slick.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery-migrate-3.0.0.min.js"></script>
-        <script src="js/circliful.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/isotope.js"></script>
+        <script src="js/bootstrap-slider.min.js"></script>
         <script src="js/slick.min.js"></script>
-        <script src="js/tilt.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/counterup.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/vendors/easypie/jquery.easypiechart.min.js"></script>
+        <script src="js/vendors/jquery.counterup.min.js"></script>
+        <script src="js/vendors/waypoints.min.js"></script>
+        <script src="js/vendors/tweecool.min.js"></script>
+        <script src="js/vendors/snap.min.js"></script>
+        <script src="js/vendors/jquery.prettyPhoto.js"></script>
+        <script src="js/vendors/isotope/isotope.pkgd.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/<! slick-carousel/1.9.0/slick.min.css"></script>-->
+        <script>
+    $(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+})
+</script>
+        <script type="text/javascript" src="pgia/lib/pgia.js"></script>
     </body>
 </html>
