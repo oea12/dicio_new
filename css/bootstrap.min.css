@@ -2083,6 +2083,7 @@ pre code {
     border: 1px solid #ced4da;
     border-radius: 11px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: auto;
 }
 
 @media screen and (prefers-reduced-motion:reduce){

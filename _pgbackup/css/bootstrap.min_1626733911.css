@@ -39,6 +39,8 @@
 ::before {
     box-sizing: border-box;
     padding-bottom: 1px;
+    z-index: auto;
+    margin-left: 0px;
 }
 
 html {
@@ -178,6 +180,7 @@ a {
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
+    text-align: center;
 }
 
 a:hover {
@@ -220,9 +223,8 @@ figure {
 }
 
 img {
-    vertical-align: middle;
     border-style: none;
-    z-index: 0;
+    z-index: 2;
 }
 
 svg {
@@ -401,6 +403,7 @@ h1 {
 .h2,
 h2 {
     font-size: 2rem;
+    margin: auto;
 }
 
 .h3,
@@ -477,8 +480,8 @@ mark {
 }
 
 .list-inline {
-    padding-left: 0;
     list-style: none;
+    margin: auto;
 }
 
 .list-inline-item {
@@ -512,6 +515,7 @@ mark {
 .img-fluid {
     max-width: 100%;
     height: auto;
+    z-index: 0;
 }
 
 .img-thumbnail {
@@ -580,10 +584,10 @@ pre code {
 
 .container {
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (min-width:576px){
@@ -606,8 +610,8 @@ pre code {
 
 @media (min-width:1200px){
     .container {
-        max-width: 1228px;
-        padding-left: 57px;
+        max-width: 1140px;
+        max-height: 542px;
     }
 }
 
@@ -714,7 +718,7 @@ pre code {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    z-index: 0;
+    z-index: 2;
 }
 
 .col {
@@ -1006,7 +1010,6 @@ pre code {
     }
 
     .col-sm-12 {
-        float: left;
     }
 
     .order-sm-first {
@@ -1406,7 +1409,7 @@ pre code {
     .col-lg-8 {
         -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
-        max-width: 66.666667%;
+        width: 100%;
     }
 
     .col-lg-9 {
@@ -2080,6 +2083,7 @@ pre code {
     border: 1px solid #ced4da;
     border-radius: 11px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: auto;
 }
 
 @media screen and (prefers-reduced-motion:reduce){
@@ -6278,6 +6282,7 @@ button.close {
 
 .carousel {
     position: relative;
+    height: 100%;
 }
 
 .carousel-inner {
