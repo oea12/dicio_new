@@ -26,6 +26,7 @@
         <link rel="stylesheet" href="js/vendors/owl-carousel/owl.transitions.css">
         <link rel="stylesheet" href="css/morris.css">
         <link rel="stylesheet" href="css/jquery.jqplot.css">
+        <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
         <title>DICIO - Tan Único Como Tú</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish&display=swap">
     </head>
@@ -94,7 +95,7 @@
                 <div class="row">
                     <div class="col-md-8 fadeInLeft wow wowhead wowxs" data-wow-duration="2.5s">
                         <div class="bnr-social">
-                            <ul class="list-inline but ">
+                            <ul class="but hey list-inline">
                                 <li class="list-inline-item">
                                     <a target="_blank" href="https://www.linkedin.com/company/dicio-ai/mycompany/?viewAsMember=true"><i class="fa fa-fw fa-linkedin"></i></a>
                                 </li>
@@ -131,6 +132,10 @@
                                                     <h2 class="news">
                                                     Registra tu mail para darte más información. </h2>
                                                     <input id="email" type="email" class="form-control" placeholder="E-mail">
+                                                </div>
+                                                <div class="col-12">
+                                                    <span id="mail_success_email" class="success">Tu información fue enviada exitosamente.</span>
+                                                    <span id="mail_fail_email" class="error">Ocurrio un error al enviar la información.</span>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="thegncy-btn">
@@ -248,7 +253,7 @@
                     <div class="d-block d-sm-none space spacesm" style="height: 60px"></div>
                     <div class="section-title">
                         <h4 style="color: #0883f5; font-size: 30px;">Acerca de nosotros</h4>
-                        <h1>Pilares</h1>
+                        <h1>Pilares de negocio</h1>
                     </div>
                     <p style="text-align: justify;">Desarrollamos herramientas seguras, inteligentes y altamente
                     competitivas para facilitar las interacciones digitales de nuestros clientes.</p>
@@ -281,7 +286,7 @@
                     <div class="bounceInUp feature-item newclass wow" data-wow-duration="2.5s">
                         <div class="feature-item-content">
                             <p style="text-align: justify;">Da la opción a tus clientes de abrir una cuenta bancaria de
-                            forma fácil, sencilla y sin la necesidad de acudir a una sucursal.</p>
+                            forma fácil, sencilla y sin la necesidad de acudir a una sucursal. Validando su identidad de forma inmediata con acreditación por la Secretaría de Economía y cumpliendo con la NOM 151</p>
                         </div>
                     </div>
                 </div>
@@ -626,10 +631,12 @@
                             <input type="text" class="form-control" placeholder="Télefono" name="phone" id="phone">
                         </div>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Empresa" name="empresa" id="empresa">
+                            <input type="text" class="form-control" placeholder="Empresa" name="company" id="company">
                         </div>
                         <div class="col-md-12">
                             <textarea class="form-control" rows="3" name="message" id="message"></textarea>
+                            <span id="mail_success_contact" class="success">Tu información fue enviada exitosamente.</span>
+                            <span id="mail_fail_contact" class="error">Ocurrio un error al enviar la información.</span>
                             <div class="thegncy-btn" id="submit">
                                 <input class="contact-btn" type="submit" value="Enviar ahora" id="send_message">
                             </div>
@@ -658,7 +665,7 @@
                         <a href="Notice.html" target="_blank">Aviso de privacidad</a>
                     </li>
                     <li class="footer2 footersm ">
-                        <a href="#cta">Contacto</a>
+                        <a href="#contact">Contacto</a>
                     </li>
                 </div>
             </div>
@@ -694,7 +701,7 @@
             <column class="Foot">
                 <div class=" dicio2">
                     <p class="textfoot">info@dicio.ai</p>
-                    <p class="textfoot">Piso 2, iOS Offices, Miyanna Av. Ejército Nacional 769 Granada, Miguel Hidalgo
+                    <p class="textfoot">Piso 2, iOS Offices, Miyana Av. Ejército Nacional 769 Granada, Miguel Hidalgo
                     11520, CDMX</p>
                 </div>
             </column>
