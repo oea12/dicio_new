@@ -4416,12 +4416,13 @@ input[type=submit].btn-block {
 }
 
 .navbar-toggler {
-    padding: .25rem .75rem;
-    font-size: 1.25rem;
-    line-height: 1;
+    line-height: 0;
     background-color: transparent;
-    border: 1px solid transparent;
     border-radius: .25rem;
+    background-image: url('../images/boton-de-menu-de-tres-lineas-horizontales.png');
+    padding: 0.20rem;
+    background-size: cover;
+    border: 0px solid transparent;
 }
 
 .navbar-toggler:focus,
